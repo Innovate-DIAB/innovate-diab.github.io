@@ -1,0 +1,19 @@
+{
+  "club": {
+    "name": "Hack Club @ DIAB",
+    "tagline": "Things we've built at our weekly club. Websites, games, code and hardware.",
+    "org": "Innovate-DIAB",
+    "siteRepo": "Innovate-DIAB/innovate-diab.github.io"
+  },
+  "defaultMode": "auto",
+  "allowedOwners": [],
+  "sections": [
+    {
+      "id": "bakebuild",
+      "title": "BakeBuild",
+      "description": "Projects from the BakeBuild workshop.",
+      "topic": "diab-hc-bakebuild",
+      "mode": "manual"
+    }
+  ]
+}

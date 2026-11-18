@@ -1,0 +1,36 @@
+name: Submit a project
+description: Ask for your repo to be added to the gallery
+title: "Add my project: "
+labels: ["submission"]
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: Repo link
+      placeholder: https://github.com/yourname/your-project
+    validations:
+      required: true
+  - type: dropdown
+    id: workshop
+    attributes:
+      label: Which workshop is it for?
+      options:
+        - BakeBuild
+    validations:
+      required: true
+  - type: textarea
+    id: about
+    attributes:
+      label: What did you make?
+      description: One or two sentences is plenty.
+    validations:
+      required: false
+  - type: checkboxes
+    id: ok
+    attributes:
+      label: Checks
+      options:
+        - label: The repo is public
+          required: true
+        - label: I wrote it myself (or credited the people who helped)
+          required: true
