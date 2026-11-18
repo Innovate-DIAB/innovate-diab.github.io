@@ -3,7 +3,9 @@
     "name": "Hack Club @ DIAB",
     "tagline": "Things we've built at our weekly club. Websites, games, code and hardware.",
     "org": "Innovate-DIAB",
-    "siteRepo": "Innovate-DIAB/innovate-diab.github.io"
+    "siteRepo": "Innovate-DIAB/innovate-diab.github.io",
+    "meeting": "Wednesday or Monday at lunch. We email the exact day on Outlook each week.",
+    "signupUrl": "https://forms.cloud.microsoft/r/DDFd4ajd7E"
   },
   "defaultMode": "auto",
   "allowedOwners": [],

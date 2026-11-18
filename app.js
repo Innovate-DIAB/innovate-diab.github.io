@@ -4,7 +4,7 @@
 const TYPE_LABELS = { all: "All", website: "Websites", game: "Games", code: "Coding", hardware: "Hardware" };
 const TYPE_BADGE = { website: "Website", game: "Game", code: "Code", hardware: "Hardware" };
 const state = { type: "all", q: "" };
-let config, data, events;
+let config, data;
 
 function h(tag, props = {}, ...kids) {
   const el = document.createElement(tag);
@@ -93,25 +93,14 @@ function sectionEl(s) {
             " to your repo to be the first.")));
 }
 
-function eventsEl() {
-  const today = new Date().toISOString().slice(0, 10);
-  const upcoming = (events || []).filter((e) => e.date >= today).sort((a, b) => a.date.localeCompare(b.date));
-  if (!upcoming.length) return null;
-  return h("section", { class: "events", id: "events" },
-    h("h2", { text: "Upcoming events" }),
-    h("div", { class: "event-list" }, upcoming.map((e) => {
-      const d = new Date(e.date + "T00:00:00");
-      const link = safeUrl(e.link);
-      return h("div", { class: "event" },
-        h("div", { class: "event-date" },
-          h("strong", { text: String(d.getDate()) }),
-          h("span", { text: d.toLocaleString("en", { month: "short" }) })),
-        h("div", {},
-          h("h3", { text: e.title }),
-          h("p", { class: "event-meta", text: [e.time, e.location].filter(Boolean).join(" · ") }),
-          e.description && h("p", { text: e.description }),
-          link && h("a", { href: link, target: "_blank", rel: "noopener" }, "Details")));
-    })));
+function meetEl() {
+  const url = safeUrl(config.club.signupUrl);
+  if (!config.club.meeting && !url) return null;
+  return h("section", { class: "meet" },
+    h("div", {},
+      h("h2", { text: "When we meet" }),
+      h("p", { text: config.club.meeting })),
+    url && h("a", { class: "btn", href: url, target: "_blank", rel: "noopener" }, "Sign up"));
 }
 
 function howTo() {
@@ -161,10 +150,11 @@ function render() {
       h("h1", {}, config.club.name, " ", h("span", {}, "projects")),
       h("p", { text: config.club.tagline }),
       h("div", { class: "hero-actions" },
-        h("a", { class: "btn", href: "#submit" }, "Add your project"),
+        safeUrl(config.club.signupUrl) && h("a", { class: "btn", href: config.club.signupUrl, target: "_blank", rel: "noopener" }, "Sign up"),
+        h("a", { class: "btn ghost", href: "#submit" }, "Add your project"),
         h("a", { class: "btn ghost", href: `https://github.com/${config.club.org}`, target: "_blank", rel: "noopener" }, "Our GitHub"),
         h("span", { class: "count", text: `${total} project${total === 1 ? "" : "s"}` })))),
-    eventsEl() && h("div", { class: "wrap" }, eventsEl()),
+    meetEl() && h("div", { class: "wrap" }, meetEl()),
     h("div", { class: "bar" }, h("div", { class: "wrap" }, search, chips, jump)),
     h("main", { class: "wrap", id: "sections" }, sections.length ? sections : h("div", { class: "empty" }, h("p", { text: "No projects match that." }))),
     h("div", { class: "wrap" }, howTo()),
@@ -184,12 +174,11 @@ function renderBody() {
 
 async function boot() {
   try {
-    const [c, d, ev] = await Promise.all([
+    const [c, d] = await Promise.all([
       fetch("config.json").then((r) => r.json()),
       fetch("data.json").then((r) => (r.ok ? r.json() : { sections: {} })).catch(() => ({ sections: {} })),
-      fetch("events.json").then((r) => (r.ok ? r.json() : [])).catch(() => []),
     ]);
-    config = c; data = d; events = ev;
+    config = c; data = d;
     render();
   } catch (err) {
     document.getElementById("app").textContent = "Could not load the gallery. Check config.json for typos.";

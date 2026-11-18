@@ -28,10 +28,6 @@ To add a workshop, copy a block, give it a new `id`, `title` and `topic`, and ad
 
 Topics must be lowercase, with only letters, numbers and hyphens.
 
-## Events
-
-Edit `events.json` on GitHub (open the file, click the pencil, add a block, commit). Each event needs a `date` like `2026-12-01`; `time`, `location`, `description` and `link` are optional. Events show in date order and disappear after their date passes.
-
 ## Automatic or manual
 
 Set `mode` on each section, or change `defaultMode` for all of them.

@@ -1,59 +1,58 @@
 # Hack Club @ DIAB
 
-We're a student-run coding and making club at Dubai International Academy Al Barsha. We meet every week, pick something to build, and ship it. You don't need any experience. Most people start by copying a workshop and end up making something that's theirs.
+Once a week a bunch of us at Dubai International Academy Al Barsha sit down, pick something to build, and try to get it working before the bell. Sometimes it does. Sometimes it catches fire a little. Either way it goes in the gallery.
 
-This repo is the code for our project gallery: **https://innovate-diab.github.io**
+The gallery lives here: **https://innovate-diab.github.io**
 
-Everything members build shows up there, grouped by workshop.
+You don't need to know how to code. Most of us didn't when we started. You just need to be curious enough to break something and then fix it.
 
 ## What is Hack Club?
 
-[Hack Club](https://hackclub.com) is a nonprofit network of high school coding clubs around the world. Clubs are run by students for students, and the whole thing is project-based. There's no exam and no fixed curriculum. You learn by making things: websites, games, apps, and hardware like circuit boards and 3D-printed gadgets.
+[Hack Club](https://hackclub.com) is a nonprofit network of high school coding clubs around the world. Students run the clubs, and nobody hands you a syllabus. You build things you actually want to build, like websites, games, apps, and hardware with real circuit boards in it.
 
-Hack Club also runs programs where you build something real and get something back for shipping it (they call these "You Ship, We Ship"), plus a global Slack with a lot of other teenage makers in it. You can find all of it at [hackclub.com/clubs](https://hackclub.com/clubs/).
+Hack Club also runs programs where you ship a project and get something back for it (they call it "You Ship, We Ship"), and there's a huge global Slack full of teenagers making stuff. Have a look at [hackclub.com/clubs](https://hackclub.com/clubs/) to see what it's all about.
 
-## Join us
+## Come hang out
 
-- Come to a session. Dates are on the gallery site under Upcoming events.
-- Make a free [GitHub account](https://github.com/signup) if you don't have one yet. You need to be 13 or older.
-- Ask a club leader to add you to this organization.
+- We meet on Wednesday or Monday at lunch. Which day depends on the email we send on Outlook that week.
+- Sign up with the [DIAB InnovateXhackclub form](https://forms.cloud.microsoft/r/DDFd4ajd7E).
+- Make a free [GitHub account](https://github.com/signup) if you don't have one (you need to be 13 or older).
+- Tell a club leader your username and we'll add you to the Innovate-DIAB organization.
 
-## Put your project in the gallery
+## Get your project on the wall
 
-1. Make your project a **public** repo on GitHub.
-2. Open the repo, click the gear next to **About**, and add the topic for your workshop:
+1. Make your project a public repo.
+2. On the repo page, click the little gear next to **About** and add your workshop's topic. For BakeBuild that's `diab-hc-bakebuild`.
+3. Write a one-line description in About. If your project is live somewhere, paste the link there too and a Live demo button shows up.
+4. Want a nice picture on your card? Put a screenshot called `preview.png` at the top level of the repo.
+5. Want it filed under the right category? Add one more topic: `type-web`, `type-game`, `type-hardware` or `type-code`. We guess if you don't.
+6. BakeBuild projects get a quick look from a club leader first. Hit **Submit a project** on the site and fill in the short form.
 
-   For BakeBuild the topic is `diab-hc-bakebuild`.
+Building hardware? Throw your KiCad or CAD files, the code, and some photos in the repo. A photo of the board next to the one that didn't work is always popular.
 
-3. Fill in **About**: a one-line description, and the website link if your project is live.
-4. Optional: add a `preview.png` (a screenshot works) to the top level of your repo. It becomes your card image.
-5. Optional: tell the gallery what kind of project it is by adding one more topic: `type-web`, `type-game`, `type-hardware` or `type-code`.
-6. BakeBuild projects are approved by a club leader before they appear. Use the **Submit a project** button on the site and fill in the form.
+## A README your project will thank you for
 
-Hardware project? Put your KiCad files, CAD files, code and a few photos in the repo, and write what you'd change next time in the README. People love reading that part.
+Everyone reads these before they decide whether to click on anything. A few lines go a long way:
 
-## Good project READMEs
-
-A short README makes your card, and your repo, much better. Try to cover:
-
-- What it is, in one or two sentences
+- What it does, in plain words
 - A screenshot or photo
-- How to run it or how to build it
-- What you learned, or what went wrong
+- How to run it or build it
+- What went wrong and what you'd do differently
 
-## Rules
+## Ground rules
 
-- Make your own work, and credit anyone who helped you or any code you borrowed.
-- Be kind. We follow the [Hack Club Code of Conduct](https://hackclub.com/conduct/).
-- Keep personal details (home address, phone number, passwords, API keys) out of your repos.
+- Make your own stuff. If you borrowed code or got help, say so.
+- Be nice to each other. We follow the [Hack Club Code of Conduct](https://hackclub.com/conduct/).
+- Keep your phone number, address, passwords and API keys out of your repos. Seriously.
 
-## Adding events or workshops (leaders)
+## For club leaders
 
-- Events: edit `events.json`.
-- New workshops and approving projects: see [SETUP.md](SETUP.md).
+Meeting info and the sign-up link are in `config.json` (`meeting` and `signupUrl`). Adding workshops and approving projects is covered in [SETUP.md](SETUP.md).
 
 ## Links
 
 - Our GitHub organization: https://github.com/Innovate-DIAB
 - Hack Club: https://hackclub.com
 - Hack Club workshops: https://workshops.hackclub.com
+
+Got an idea for what we should build next? Open an issue and tell us.

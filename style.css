@@ -99,17 +99,11 @@ code, .topic {
   padding: 1px 7px; border-radius: 6px; font-size: .88em;
 }
 
-/* events */
-.events { padding: 8px 0 24px; }
-.events h2 { margin: 0 0 14px; font-size: 1.4rem; }
-.event-list { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
-.event { display: flex; gap: 14px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; }
-.event-date { min-width: 52px; text-align: center; background: var(--accent-soft); color: var(--accent); border-radius: 10px; padding: 6px 4px; height: fit-content; }
-.event-date strong { display: block; font-size: 1.4rem; line-height: 1.1; }
-.event-date span { font-size: .8rem; text-transform: uppercase; }
-.event h3 { margin: 0 0 2px; font-size: 1.05rem; }
-.event p { margin: 0 0 4px; color: var(--muted); font-size: .92rem; }
-.event a { color: var(--accent); font-weight: 600; font-size: .9rem; text-decoration: none; }
+/* meeting info */
+.meet { display: flex; gap: 16px; align-items: center; justify-content: space-between; flex-wrap: wrap;
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 20px; margin: 8px 0 24px; }
+.meet h2 { margin: 0 0 2px; font-size: 1.2rem; }
+.meet p { margin: 0; color: var(--muted); }
 
 /* how to submit */
 .howto { padding: 48px 0 20px; }
