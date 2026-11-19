@@ -51,9 +51,11 @@ function card(p) {
     class: "thumb", loading: "lazy", alt: "",
     src: `https://raw.githubusercontent.com/${p.full_name}/HEAD/preview.png`,
   });
-  // No preview.png in the repo? Fall back to GitHub's auto-generated social card.
+  // No preview.png in the repo? Fall back to the club logo.
   thumb.addEventListener("error", () => {
-    thumb.src = `https://opengraph.githubassets.com/1/${p.full_name}`;
+    // No preview.png: show the club logo as a placeholder.
+    thumb.src = config.club.logo || `https://opengraph.githubassets.com/1/${p.full_name}`;
+    thumb.classList.add("placeholder");
   }, { once: true });
 
   const live = safeUrl(p.homepage);
@@ -89,6 +91,7 @@ function sectionEl(s) {
     shown.length
       ? h("div", { class: "grid" }, shown.map(card))
       : h("div", { class: "empty" },
+          config.club.logo && h("img", { class: "empty-logo", src: config.club.logo, alt: "" }),
           h("p", {}, "Nothing here yet. Add the topic ", h("span", { class: "topic" }, s.topic),
             " to your repo to be the first.")));
 }
@@ -145,8 +148,9 @@ function render() {
   const jump = h("nav", { class: "jump", "aria-label": "Workshops" },
     config.sections.map((s) => h("a", { href: "#" + s.id, text: s.title })));
 
-  app.replaceChildren(
+  app.replaceChildren(...[
     h("header", { class: "hero" }, h("div", { class: "wrap" },
+      config.club.logo && h("img", { class: "hero-logo", src: config.club.logo, alt: config.club.name + " logo" }),
       h("h1", {}, config.club.name, " ", h("span", {}, "projects")),
       h("p", { text: config.club.tagline }),
       h("div", { class: "hero-actions" },
@@ -159,7 +163,7 @@ function render() {
     h("main", { class: "wrap", id: "sections" }, sections.length ? sections : h("div", { class: "empty" }, h("p", { text: "No projects match that." }))),
     h("div", { class: "wrap" }, howTo()),
     h("footer", {}, h("div", { class: "wrap" },
-      data.generated ? `Updated ${new Date(data.generated).toLocaleString()}` : "Not built yet")));
+      data.generated ? `Updated ${new Date(data.generated).toLocaleString()}` : "Not built yet"))].filter(Boolean));
 }
 
 // Re-render only the project list so the search box keeps focus while typing.

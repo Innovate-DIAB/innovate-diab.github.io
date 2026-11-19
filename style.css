@@ -45,6 +45,8 @@ a { color: inherit; }
 .btn.ghost { background: transparent; color: var(--accent); }
 .count { color: var(--muted); font-size: .95rem; margin-left: 6px; }
 
+.hero-logo { width: 140px; height: auto; border-radius: 18px; display: block; margin-bottom: 18px; }
+
 /* sticky bar */
 .bar { position: sticky; top: 0; z-index: 10; background: var(--bg); border-bottom: 1px solid var(--line); }
 .bar .wrap { display: flex; gap: 14px; align-items: center; padding-top: 12px; padding-bottom: 12px; flex-wrap: wrap; }
@@ -79,6 +81,8 @@ a { color: inherit; }
 }
 .card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0, 0, 0, .1); }
 .thumb { aspect-ratio: 2 / 1; width: 100%; object-fit: cover; background: var(--line); display: block; }
+.thumb.placeholder { object-fit: contain; background: #f2f1ee; padding: 6px 0; }
+.empty-logo { width: 110px; height: auto; border-radius: 14px; display: block; margin: 0 auto 12px; opacity: .9; }
 .card-body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
 .card h3 { margin: 0; font-size: 1.1rem; }
 .card h3 a { text-decoration: none; }

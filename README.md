@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/logo-full.png" width="220" alt="Innovate @ DIAB logo"></p>
+
 # Hack Club @ DIAB
 
 Once a week a bunch of us at Dubai International Academy Al Barsha sit down, pick something to build, and try to get it working before the bell. Sometimes it does. Sometimes it catches fire a little. Either way it goes in the gallery.

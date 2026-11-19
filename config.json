@@ -5,7 +5,8 @@
     "org": "Innovate-DIAB",
     "siteRepo": "Innovate-DIAB/innovate-diab.github.io",
     "meeting": "Wednesday or Monday at lunch. We email the exact day on Outlook each week.",
-    "signupUrl": "https://forms.cloud.microsoft/r/DDFd4ajd7E"
+    "signupUrl": "https://forms.cloud.microsoft/r/DDFd4ajd7E",
+    "logo": "assets/logo-full.png"
   },
   "defaultMode": "auto",
   "allowedOwners": [],
