@@ -4,7 +4,7 @@
 const TYPE_LABELS = { all: "All", website: "Websites", game: "Games", code: "Coding", hardware: "Hardware" };
 const TYPE_BADGE = { website: "Website", game: "Game", code: "Code", hardware: "Hardware" };
 const state = { type: "all", q: "" };
-let config, data;
+let config, data, showcase = {};
 
 function h(tag, props = {}, ...kids) {
   const el = document.createElement(tag);
@@ -46,7 +46,31 @@ function matches(p) {
     .filter(Boolean).join(" ").toLowerCase().includes(q);
 }
 
+function stlCard(p) {
+  const box = h("div", { class: "viewer", "aria-label": `3D model of ${p.title}`, role: "img" },
+    h("span", { class: "viewer-hint", text: "Loading 3D model..." }));
+  import("./viewer.js").then((m) => m.mountStl(box, p.stl))
+    .catch((err) => { console.error(err); box.querySelector(".viewer-hint").textContent = "3D preview not available in this browser."; });
+  box.append(h("span", { class: "viewer-tip", text: "Drag to rotate" }));
+  return h("article", { class: "card" },
+    box,
+    h("div", { class: "card-body" },
+      h("h3", {}, h("a", { href: p.url, target: "_blank", rel: "noopener" }, p.title)),
+      p.github
+        ? h("a", { class: "author", href: `https://github.com/${p.github}`, target: "_blank", rel: "noopener" },
+            h("img", { src: `https://github.com/${p.github}.png?size=40`, alt: "", loading: "lazy" }), p.author)
+        : h("span", { class: "author" }, p.author),
+      h("p", {}, p.description),
+      h("div", { class: "meta" },
+        h("span", { class: "badge" }, "3D print"),
+        h("span", { class: "badge wip" }, "In progress")),
+      h("div", { class: "links" },
+        h("a", { href: p.url, target: "_blank", rel: "noopener" }, "View on GitHub"),
+        h("a", { href: p.stl, download: "" }, "Download STL"))));
+}
+
 function card(p) {
+  if (p.stl) return stlCard(p);
   const thumb = h("img", {
     class: "thumb", loading: "lazy", alt: "",
     src: `https://raw.githubusercontent.com/${p.full_name}/HEAD/preview.png`,
@@ -76,7 +100,7 @@ function card(p) {
 }
 
 function sectionEl(s) {
-  const all = data.sections?.[s.id] || [];
+  const all = [...(showcase[s.id] || []), ...(data.sections?.[s.id] || [])];
   const shown = all.filter(matches);
   const filtering = state.type !== "all" || state.q.trim();
   if (filtering && shown.length === 0) return null;
@@ -132,7 +156,7 @@ function howTo() {
 
 function render() {
   const app = document.getElementById("app");
-  const total = Object.values(data.sections || {}).reduce((n, list) => n + list.length, 0);
+  const total = [data.sections, showcase].reduce((n, o) => n + Object.values(o || {}).reduce((m, l) => m + l.length, 0), 0);
   document.title = `${config.club.name} project gallery`;
 
   const sections = config.sections.map(sectionEl).filter(Boolean);
@@ -184,11 +208,12 @@ function renderBody() {
 
 async function boot() {
   try {
-    const [c, d] = await Promise.all([
+    const [c, d, sc] = await Promise.all([
       fetch("config.json").then((r) => r.json()),
       fetch("data.json").then((r) => (r.ok ? r.json() : { sections: {} })).catch(() => ({ sections: {} })),
+      fetch("showcase.json").then((r) => (r.ok ? r.json() : {})).catch(() => ({})),
     ]);
-    config = c; data = d;
+    config = c; data = d; showcase = sc;
     render();
   } catch (err) {
     document.getElementById("app").textContent = "Could not load the gallery. Check config.json for typos.";

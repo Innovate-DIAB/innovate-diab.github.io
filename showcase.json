@@ -1,0 +1,33 @@
+{
+  "bakebuild": [
+    {
+      "name": "rocket-cookie-cutter",
+      "title": "Rocket Cookie Cutter",
+      "author": "Agastya Johri",
+      "description": "A rocket-shaped cookie cutter, made because they love rockets and space exploration.",
+      "type": "hardware",
+      "stl": "assets/models/rocket-cookie-cutter-0296494c.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/rocket-cookie-cutter-0296494c.stl"
+    },
+    {
+      "name": "doge-cookie-cutter",
+      "title": "Doge Cookie Cutter",
+      "author": "Aditya Jain",
+      "github": "AdityaJainDXB",
+      "description": "A cookie cutter in the shape of Doge the dog, because of a love for dogs and the Shiba Inu breed.",
+      "type": "hardware",
+      "stl": "assets/models/doge-cookie-cutter-03d41bd4.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/doge-cookie-cutter-03d41bd4.stl"
+    },
+    {
+      "name": "my-star-cookie",
+      "title": "My Star Cookie",
+      "author": "Saikrish Elangovan",
+      "github": "Saigamer007pro",
+      "description": "A star cookie cutter. Chosen because Sai is a STAR!",
+      "type": "hardware",
+      "stl": "assets/models/my-star-cookie-ef74e070.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/my-star-cookie-ef74e070.stl"
+    }
+  ]
+}
