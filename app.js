@@ -156,6 +156,7 @@ function render() {
       h("div", { class: "hero-actions" },
         safeUrl(config.club.signupUrl) && h("a", { class: "btn", href: config.club.signupUrl, target: "_blank", rel: "noopener" }, "Sign up"),
         h("a", { class: "btn ghost", href: "#submit" }, "Add your project"),
+        safeUrl(config.club.tiktokUrl) && h("a", { class: "btn ghost", href: config.club.tiktokUrl, target: "_blank", rel: "noopener" }, "TikTok"),
         h("a", { class: "btn ghost", href: `https://github.com/${config.club.org}`, target: "_blank", rel: "noopener" }, "Our GitHub"),
         h("span", { class: "count", text: `${total} project${total === 1 ? "" : "s"}` })))),
     meetEl() && h("div", { class: "wrap" }, meetEl()),
