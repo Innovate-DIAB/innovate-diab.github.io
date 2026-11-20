@@ -98,12 +98,15 @@ function sectionEl(s) {
 
 function meetEl() {
   const url = safeUrl(config.club.signupUrl);
-  if (!config.club.meeting && !url) return null;
+  const ext = safeUrl(config.club.signupExternalUrl);
+  if (!config.club.meeting && !url && !ext) return null;
   return h("section", { class: "meet" },
     h("div", {},
       h("h2", { text: "When we meet" }),
       h("p", { text: config.club.meeting })),
-    url && h("a", { class: "btn", href: url, target: "_blank", rel: "noopener" }, "Sign up"));
+    h("div", { class: "meet-actions" },
+      url && h("a", { class: "btn", href: url, target: "_blank", rel: "noopener" }, "DIAB students: sign up"),
+      ext && h("a", { class: "btn ghost", href: ext, target: "_blank", rel: "noopener" }, "Other schools: sign up")));
 }
 
 function howTo() {

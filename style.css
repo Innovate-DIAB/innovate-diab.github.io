@@ -108,6 +108,7 @@ code, .topic {
   background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 20px; margin: 8px 0 24px; }
 .meet h2 { margin: 0 0 2px; font-size: 1.2rem; }
 .meet p { margin: 0; color: var(--muted); }
+.meet-actions { display: flex; gap: 10px; flex-wrap: wrap; }
 
 /* how to submit */
 .howto { padding: 48px 0 20px; }

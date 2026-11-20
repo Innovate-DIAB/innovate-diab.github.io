@@ -16,11 +16,12 @@ Hack Club also runs programs where you ship a project and get something back for
 
 ## Come hang out
 
-- We meet on Wednesday or Monday at lunch. Which day depends on the email we send on Outlook that week.
+- We meet on Wednesday or Monday at lunch. We send the exact day via email each week.
 - Follow us on [TikTok](https://www.tiktok.com/@innovatediab) to see what we're up to.
 - Follow us on [Instagram](https://www.instagram.com/innovateat_diab/) too.
 - Watch us on [YouTube](https://www.youtube.com/@InnovateDIAB).
-- Sign up with the [DIAB InnovateXhackclub form](https://forms.cloud.microsoft/r/DDFd4ajd7E).
+- DIAB students: sign up with the [DIAB InnovateXhackclub form](https://forms.cloud.microsoft/r/DDFd4ajd7E).
+- Other schools: sign up on the [external sign-up page](https://innovate-diab.github.io/website-hackclub/signup.html).
 - Make a free [GitHub account](https://github.com/signup) if you don't have one (you need to be 13 or older).
 - Tell a club leader your username and we'll add you to the Innovate-DIAB organization.
 

@@ -4,10 +4,11 @@
     "tagline": "Things we've built at our weekly club. Websites, games, code and hardware.",
     "org": "Innovate-DIAB",
     "siteRepo": "Innovate-DIAB/innovate-diab.github.io",
-    "meeting": "Wednesday or Monday at lunch. We email the exact day on Outlook each week.",
+    "meeting": "Wednesday or Monday at lunch. We send the exact day via email each week.",
     "tiktokUrl": "https://www.tiktok.com/@innovatediab",
     "instagramUrl": "https://www.instagram.com/innovateat_diab/",
     "youtubeUrl": "https://www.youtube.com/@InnovateDIAB",
+    "signupExternalUrl": "https://innovate-diab.github.io/website-hackclub/signup.html",
     "signupUrl": "https://forms.cloud.microsoft/r/DDFd4ajd7E",
     "logo": "assets/logo-full.png"
   },
