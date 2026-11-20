@@ -34,7 +34,7 @@ jobs:
       - name: Collect site files
         run: |
           mkdir dist
-          cp index.html style.css app.js config.json data.json dist/
+          cp index.html style.css app.js viewer.js config.json data.json showcase.json dist/
           cp -r assets dist/assets
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
