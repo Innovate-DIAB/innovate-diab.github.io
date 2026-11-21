@@ -209,9 +209,9 @@ function renderBody() {
 async function boot() {
   try {
     const [c, d, sc] = await Promise.all([
-      fetch("config.json").then((r) => r.json()),
-      fetch("data.json").then((r) => (r.ok ? r.json() : { sections: {} })).catch(() => ({ sections: {} })),
-      fetch("showcase.json").then((r) => (r.ok ? r.json() : {})).catch(() => ({})),
+      fetch("config.json", { cache: "no-cache" }).then((r) => r.json()),
+      fetch("data.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : { sections: {} })).catch(() => ({ sections: {} })),
+      fetch("showcase.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : {})).catch(() => ({})),
     ]);
     config = c; data = d; showcase = sc;
     render();
