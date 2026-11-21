@@ -29,6 +29,16 @@
       "type": "hardware",
       "stl": "assets/models/my-star-cookie-ef74e070.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/my-star-cookie-ef74e070.stl"
+    },
+    {
+      "name": "car-chassis-cookie-cutter",
+      "title": "Car Chassis Cookie Cutter",
+      "author": "Aditya Jain",
+      "github": "AdityaJainDXB",
+      "description": "A car chassis shaped cookie cutter, because Aditya loves cars and thought it would be a unique, cool shape to cut cookies in.",
+      "type": "hardware",
+      "stl": "assets/models/car-chasis-cookie-cutter-9ef2d904.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/car-chasis-cookie-cutter-9ef2d904.stl"
     }
   ]
 }
