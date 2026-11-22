@@ -155,3 +155,5 @@ footer { color: var(--muted); font-size: .85rem; padding: 40px 0 50px; text-alig
 .tab:hover { color: var(--text); }
 .tab[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
 .jump a.on { color: var(--accent); font-weight: 600; }
+.bits-right { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
+.bits-pending { font-size: .75rem; padding: 2px 9px; border-radius: 999px; background: var(--line); color: var(--muted); white-space: nowrap; }

@@ -172,7 +172,9 @@ function innoBitsEl() {
       return h("li", { title: e.projects.join(", ") },
         h("span", { class: "bits-rank", text: i + 1 }),
         e.github ? h("a", { href: `https://github.com/${e.github}`, target: "_blank", rel: "noopener" }, who) : h("span", { class: "bits-who" }, who),
-        h("span", { class: "bits-count" + (e.count ? "" : " none"), text: `${e.count} InnoBit${e.count === 1 ? "" : "s"}` + (e.pending ? ` · ${e.pending} pending` : "") }));
+        h("span", { class: "bits-right" },
+          e.pending > 0 && h("span", { class: "bits-pending", text: `${e.pending} pending approval` }),
+          h("span", { class: "bits-count" + (e.count ? "" : " none"), text: `${e.count} InnoBit${e.count === 1 ? "" : "s"}` })));
     })));
 }
 
