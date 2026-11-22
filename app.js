@@ -3,7 +3,7 @@
 
 const TYPE_LABELS = { all: "All", website: "Websites", game: "Games", code: "Coding", hardware: "Hardware" };
 const TYPE_BADGE = { website: "Website", game: "Game", code: "Code", hardware: "Hardware" };
-const state = { type: "all", q: "" };
+const state = { type: "all", q: "", tab: location.hash === "#leaderboard" ? "leaderboard" : "projects" };
 let config, data, showcase = {};
 
 function h(tag, props = {}, ...kids) {
@@ -197,6 +197,21 @@ function howTo() {
     h("p", {}, h("a", { class: "btn", href: submitUrl, target: "_blank", rel: "noopener" }, "Submit a project")));
 }
 
+function setTab(tab) {
+  state.tab = tab;
+  history.replaceState(null, "", tab === "leaderboard" ? "#leaderboard" : location.pathname);
+  render();
+  window.scrollTo({ top: 0 });
+}
+
+// Links like #submit or #bakebuild live on the Projects tab; switch back to it and scroll.
+window.addEventListener("hashchange", () => {
+  const id = location.hash.slice(1);
+  const want = id === "leaderboard" ? "leaderboard" : "projects";
+  if (want !== state.tab) { state.tab = want; render(); }
+  if (id && id !== "leaderboard") document.getElementById(id)?.scrollIntoView();
+});
+
 function render() {
   const app = document.getElementById("app");
   const total = [data.sections, showcase].reduce((n, o) => n + Object.values(o || {}).reduce((m, l) => m + l.length, 0), 0);
@@ -232,10 +247,17 @@ function render() {
         h("a", { class: "btn ghost", href: `https://github.com/${config.club.org}`, target: "_blank", rel: "noopener" }, "Our GitHub"),
         h("span", { class: "count", text: `${total} project${total === 1 ? "" : "s"}` })))),
     meetEl() && h("div", { class: "wrap" }, meetEl()),
-    h("div", { class: "bar" }, h("div", { class: "wrap" }, search, chips, jump)),
-    h("main", { class: "wrap", id: "sections" }, sections.length ? sections : h("div", { class: "empty" }, h("p", { text: "No projects match that." }))),
-    innoBitsEl() && h("div", { class: "wrap" }, innoBitsEl()),
-    h("div", { class: "wrap" }, howTo()),
+    h("div", { class: "wrap" }, h("div", { class: "tabs", role: "tablist" },
+      h("a", { class: "tab", role: "tab", href: "#", "aria-selected": String(state.tab === "projects"), text: "Projects",
+        onclick: (e) => { e.preventDefault(); setTab("projects"); } }),
+      h("a", { class: "tab", role: "tab", href: "#leaderboard", "aria-selected": String(state.tab === "leaderboard"), text: "Leaderboard",
+        onclick: (e) => { e.preventDefault(); setTab("leaderboard"); } }))),
+    ...(state.tab === "leaderboard"
+      ? [h("main", { class: "wrap" }, innoBitsEl() || h("div", { class: "empty" }, h("p", { text: "No InnoBits yet." })))]
+      : [
+        h("div", { class: "bar" }, h("div", { class: "wrap" }, search, chips, jump)),
+        h("main", { class: "wrap", id: "sections" }, sections.length ? sections : h("div", { class: "empty" }, h("p", { text: "No projects match that." }))),
+        h("div", { class: "wrap" }, howTo())]),
     h("footer", {}, h("div", { class: "wrap" },
       data.generated ? `Updated ${new Date(data.generated).toLocaleString()}` : "Not built yet"))].filter(Boolean));
 }

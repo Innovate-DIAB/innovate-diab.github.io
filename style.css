@@ -136,13 +136,21 @@ footer { color: var(--muted); font-size: .85rem; padding: 40px 0 50px; text-alig
 /* InnoBits */
 .innobits { padding: 8px 0 28px; }
 .badge.bit { background: #ffd23f; color: #5a4300; }
-.bits { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+.bits { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; max-width: 760px; }
 .bits li { display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); }
 .bits a, .bits-who { display: flex; align-items: center; gap: 8px; color: var(--text); text-decoration: none; flex: 1; min-width: 0; }
-.bits img { width: 28px; height: 28px; border-radius: 50%; }
-.bits-rank { color: var(--muted); font-size: .85rem; width: 1.2em; text-align: center; }
+.bits img { width: 36px; height: 36px; border-radius: 50%; }
+.bits li:first-child { border-color: #ffd23f; }
+.bits-rank { color: var(--muted); font-weight: 700; width: 1.6em; text-align: center; }
+.bits li:first-child .bits-rank { color: #b58500; }
 .bits-name { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .bits-count { font-weight: 700; color: #b58500; white-space: nowrap; }
 @media (prefers-color-scheme: dark) { .badge.bit { background: #4a3a00; color: #ffd23f; } .bits-count { color: #ffd23f; } }
 .badge.pend { background: var(--line); color: var(--muted); }
 .bits-count.none { color: var(--muted); }
+
+/* Tabs */
+.tabs { display: flex; gap: 6px; margin: 18px 0 4px; border-bottom: 1px solid var(--line); }
+.tab { padding: 10px 18px; font-weight: 600; text-decoration: none; color: var(--muted); border-bottom: 3px solid transparent; margin-bottom: -1px; }
+.tab:hover { color: var(--text); }
+.tab[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
