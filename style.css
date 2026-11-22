@@ -1,23 +1,13 @@
 :root {
-  --bg: #f6f7f9;
-  --card: #ffffff;
-  --text: #1f2933;
-  --muted: #616e7c;
-  --line: #e1e5ea;
-  --accent: #ec3750;
-  --accent-soft: #fde8eb;
-  --radius: 14px;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #14171c;
-    --card: #1d2128;
-    --text: #e8ecf1;
-    --muted: #9aa5b1;
-    --line: #2b313a;
-    --accent: #ff5a70;
-    --accent-soft: #3a1e25;
-  }
+  /* Hack Club design system tokens (https://design.hackclub.com). They switch for light and dark by themselves. */
+  --bg: var(--hc-background);
+  --card: var(--hc-surface);
+  --text: var(--hc-foreground);
+  --muted: var(--hc-muted);
+  --line: var(--hc-border);
+  --accent: var(--hc-red);
+  --accent-soft: color-mix(in srgb, var(--hc-red) 14%, transparent);
+  --radius: var(--hc-radius-card);
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 76px; }
@@ -25,7 +15,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--hc-font-sans);
   line-height: 1.5;
 }
 a { color: inherit; }
@@ -158,3 +148,16 @@ footer { color: var(--muted); font-size: .85rem; padding: 40px 0 50px; text-alig
 .bits-right { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
 .bits-pending { font-size: .75rem; padding: 2px 9px; border-radius: 999px; background: var(--line); color: var(--muted); white-space: nowrap; }
 .badge.ok { background: #1f9d63; color: #fff; }
+
+/* Design system touches */
+h1, h2, h3 { letter-spacing: var(--hc-tracking-display); line-height: 1.1; }
+.hero h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); }
+.btn, .chip, .search { border-radius: var(--hc-radius-pill); }
+.btn { transition: transform var(--hc-duration-fast) var(--hc-ease-playful), box-shadow var(--hc-duration-fast); }
+.btn:hover { transform: translateY(-2px) rotate(-1deg); box-shadow: var(--hc-shadow-card); }
+.card { box-shadow: var(--hc-shadow-card); border-color: var(--line); }
+.card:hover { transform: translateY(-4px) rotate(-.4deg); transition-timing-function: var(--hc-ease-playful); }
+.section-head h2, .innobits h2 { font-weight: 700; }
+.hero { background: var(--hc-gradient-red-wash, transparent); }
+a:focus-visible, .btn:focus-visible, .chip:focus-visible { box-shadow: var(--hc-shadow-focus); outline: none; }
+.card h3, .howto h3, .meet h2 { font-family: var(--hc-font-sans); font-weight: 700; }
