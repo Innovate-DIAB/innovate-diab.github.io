@@ -152,7 +152,8 @@ function innoBits() {
     e.projects.push((p.title || pretty(p.name)) + (isApproved(p) ? "" : " (pending)"));
     people.set(key, e);
   }
-  return [...people.values()].sort((x, y) => y.count - x.count || y.pending - x.pending || x.name.localeCompare(y.name));
+  const hidden = new Set((config.leaderboardExclude || []).map((x) => x.toLowerCase()));
+  return [...people.entries()].filter(([key]) => !hidden.has(key)).map(([, e]) => e).sort((x, y) => y.count - x.count || y.pending - x.pending || x.name.localeCompare(y.name));
 }
 
 function innoBitsEl() {

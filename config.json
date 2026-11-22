@@ -13,6 +13,7 @@
     "signupUrl": "https://forms.cloud.microsoft/r/DDFd4ajd7E",
     "logo": "assets/logo-full.png"
   },
+  "leaderboardExclude": ["AdityaJainDXB", "Saigamer007pro"],
   "defaultMode": "auto",
   "allowedOwners": [],
   "sections": [
