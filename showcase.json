@@ -39,6 +39,15 @@
       "type": "hardware",
       "stl": "assets/models/car-chasis-cookie-cutter-9ef2d904.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/car-chasis-cookie-cutter-9ef2d904.stl"
+    },
+    {
+      "name": "fc-barcelona-cookie-cutter",
+      "title": "FC Barcelona Cookie Cutter",
+      "author": "Akshath Karthik Rao",
+      "description": "An FC Barcelona cookie cutter, made because they are the greatest club in the world.",
+      "type": "hardware",
+      "stl": "assets/models/fc-barcelona-cookie-cutter-09c415b6.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/fc-barcelona-cookie-cutter-09c415b6.stl"
     }
   ]
 }
