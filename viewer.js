@@ -1,7 +1,36 @@
 // Small interactive STL viewer (three.js). Drag to rotate; it spins by itself until you touch it.
 import * as THREE from "three";
 import { STLLoader } from "three/addons/loaders/STLLoader.js";
+import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+
+const OCCT = "https://cdn.jsdelivr.net/npm/occt-import-js@0.0.23/dist/";
+let occtPromise;
+function loadOcct() {
+  occtPromise ||= new Promise((resolve, reject) => {
+    const s = document.createElement("script");
+    s.src = OCCT + "occt-import-js.js";
+    s.onload = () => window.occtimportjs({ locateFile: (f) => OCCT + f }).then(resolve, reject);
+    s.onerror = reject;
+    document.head.append(s);
+  });
+  return occtPromise;
+}
+
+// STEP files are converted to a mesh in the browser, then shown like an STL.
+async function loadStep(url) {
+  const [occt, buf] = await Promise.all([loadOcct(), fetch(url).then((r) => r.arrayBuffer())]);
+  const res = occt.ReadStepFile(new Uint8Array(buf), null);
+  if (!res.success || !res.meshes.length) throw new Error("Could not read STEP file");
+  const geos = res.meshes.map((m) => {
+    const g = new THREE.BufferGeometry();
+    g.setAttribute("position", new THREE.Float32BufferAttribute(m.attributes.position.array, 3));
+    if (m.attributes.normal) g.setAttribute("normal", new THREE.Float32BufferAttribute(m.attributes.normal.array, 3));
+    g.setIndex(m.index.array);
+    return g;
+  });
+  return geos.length === 1 ? geos[0] : mergeGeometries(geos);
+}
 
 export function mountStl(box, url, { color = 0xec3750 } = {}) {
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
@@ -33,8 +62,10 @@ export function mountStl(box, url, { color = 0xec3750 } = {}) {
   new ResizeObserver(resize).observe(box);
   resize();
 
-  return new Promise((resolve, reject) => {
-    new STLLoader().load(url, (geo) => {
+  const getGeometry = /\.(step|stp)$/i.test(url)
+    ? loadStep(url)
+    : new Promise((res, rej) => new STLLoader().load(url, res, undefined, rej));
+  return getGeometry.then((geo) => {
       geo.computeVertexNormals();
       geo.center();
       geo.computeBoundingSphere();
@@ -50,7 +81,5 @@ export function mountStl(box, url, { color = 0xec3750 } = {}) {
       new IntersectionObserver(([e]) => { visible = e.isIntersecting; }).observe(box);
       renderer.setAnimationLoop(() => { if (visible) { controls.update(); renderer.render(scene, camera); } });
       box.classList.add("ready");
-      resolve();
-    }, undefined, reject);
   });
 }

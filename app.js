@@ -67,7 +67,7 @@ function stlCard(p) {
         h("span", { class: "badge wip" }, "In progress")),
       h("div", { class: "links" },
         h("a", { href: p.url, target: "_blank", rel: "noopener" }, "View on GitHub"),
-        h("a", { href: p.stl, download: "" }, "Download STL"))));
+        h("a", { href: p.stl, download: "" }, /\.(step|stp)$/i.test(p.stl) ? "Download STEP" : "Download STL"))));
 }
 
 function card(p) {
