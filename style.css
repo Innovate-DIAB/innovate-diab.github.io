@@ -132,3 +132,15 @@ footer { color: var(--muted); font-size: .85rem; padding: 40px 0 50px; text-alig
 .viewer-tip { right: 10px; bottom: 8px; opacity: .8; pointer-events: none; }
 .badge.wip { background: transparent; border: 1px solid var(--accent); }
 .author:not(a) { color: var(--muted); font-size: .85rem; }
+
+/* InnoBits */
+.innobits { padding: 8px 0 28px; }
+.badge.bit { background: #ffd23f; color: #5a4300; }
+.bits { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+.bits li { display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); }
+.bits a, .bits-who { display: flex; align-items: center; gap: 8px; color: var(--text); text-decoration: none; flex: 1; min-width: 0; }
+.bits img { width: 28px; height: 28px; border-radius: 50%; }
+.bits-rank { color: var(--muted); font-size: .85rem; width: 1.2em; text-align: center; }
+.bits-name { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bits-count { font-weight: 700; color: #b58500; white-space: nowrap; }
+@media (prefers-color-scheme: dark) { .badge.bit { background: #4a3a00; color: #ffd23f; } .bits-count { color: #ffd23f; } }

@@ -26,6 +26,10 @@ Hack Club also runs programs where you ship a project and get something back for
 - Make a free [GitHub account](https://github.com/signup) if you don't have one (you need to be 13 or older).
 - Tell a club leader your username and we'll add you to the Innovate-DIAB organization.
 
+## InnoBits
+
+Every project you submit earns you 1 InnoBit. The gallery counts them automatically and shows everyone's total in the InnoBits section.
+
 ## Get your project on the wall
 
 1. Make your project a public repo.
