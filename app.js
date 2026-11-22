@@ -64,7 +64,7 @@ function stlCard(p) {
       h("div", { class: "meta" },
         h("span", { class: "badge" }, "3D print"),
         isApproved(p) ? h("span", { class: "badge bit" }, "+1 InnoBit") : h("span", { class: "badge pend" }, "Pending"),
-        h("span", { class: "badge wip" }, "In progress")),
+        isApproved(p) ? h("span", { class: "badge ok" }, "Approved") : h("span", { class: "badge wip" }, "In progress")),
       h("div", { class: "links" },
         h("a", { href: p.url, target: "_blank", rel: "noopener" }, "View on GitHub"),
         h("a", { href: p.stl, download: "" }, /\.(step|stp)$/i.test(p.stl) ? "Download STEP" : "Download STL"))));
