@@ -144,3 +144,5 @@ footer { color: var(--muted); font-size: .85rem; padding: 40px 0 50px; text-alig
 .bits-name { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .bits-count { font-weight: 700; color: #b58500; white-space: nowrap; }
 @media (prefers-color-scheme: dark) { .badge.bit { background: #4a3a00; color: #ffd23f; } .bits-count { color: #ffd23f; } }
+.badge.pend { background: var(--line); color: var(--muted); }
+.bits-count.none { color: var(--muted); }

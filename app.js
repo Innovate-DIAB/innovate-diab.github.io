@@ -63,7 +63,7 @@ function stlCard(p) {
       h("p", {}, p.description),
       h("div", { class: "meta" },
         h("span", { class: "badge" }, "3D print"),
-        h("span", { class: "badge bit" }, "+1 InnoBit"),
+        isApproved(p) ? h("span", { class: "badge bit" }, "+1 InnoBit") : h("span", { class: "badge pend" }, "Pending"),
         h("span", { class: "badge wip" }, "In progress")),
       h("div", { class: "links" },
         h("a", { href: p.url, target: "_blank", rel: "noopener" }, "View on GitHub"),
@@ -93,7 +93,6 @@ function card(p) {
       h("p", {}, p.description || "No description yet."),
       h("div", { class: "meta" },
         h("span", { class: "badge" }, TYPE_BADGE[p.type] || "Code"),
-        h("span", { class: "badge bit" }, "+1 InnoBit"),
         p.language && h("span", {}, p.language),
         p.stars > 0 && h("span", {}, "★ " + p.stars)),
       h("div", { class: "links" },
@@ -135,6 +134,9 @@ function meetEl() {
       ext && h("a", { class: "btn ghost", href: ext, target: "_blank", rel: "noopener" }, "Other schools: sign up")));
 }
 
+// Only approved projects earn an InnoBit. Repo-based projects come from the approved list, so they count.
+const isApproved = (p) => (p.status || "approved") === "approved";
+
 // InnoBits: every project someone submits earns them 1 InnoBit. Counted from everything shown in the gallery.
 function innoBits() {
   const people = new Map();
@@ -144,24 +146,25 @@ function innoBits() {
     const name = p.author || p.owner;
     if (!name) continue;
     const key = (github || name).toLowerCase();
-    const e = people.get(key) || { name, github, avatar: p.avatar || null, count: 0, projects: [] };
+    const e = people.get(key) || { name, github, avatar: p.avatar || null, count: 0, pending: 0, projects: [] };
     if (github && !e.github) e.github = github;
-    e.count += 1;
-    e.projects.push(p.title || pretty(p.name));
+    if (isApproved(p)) e.count += 1; else e.pending += 1;
+    e.projects.push((p.title || pretty(p.name)) + (isApproved(p) ? "" : " (pending)"));
     people.set(key, e);
   }
-  return [...people.values()].sort((x, y) => y.count - x.count || x.name.localeCompare(y.name));
+  return [...people.values()].sort((x, y) => y.count - x.count || y.pending - x.pending || x.name.localeCompare(y.name));
 }
 
 function innoBitsEl() {
   const board = innoBits();
   if (!board.length) return null;
   const total = board.reduce((n, e) => n + e.count, 0);
+  const pendingTotal = board.reduce((n, e) => n + e.pending, 0);
   return h("section", { class: "innobits", id: "innobits" },
     h("div", { class: "section-head" },
       h("h2", { text: "InnoBits" }),
-      h("span", { class: "mode", text: `${total} earned` })),
-    h("p", { class: "desc", text: "Every project you submit earns you 1 InnoBit. Submit more, collect more." }),
+      h("span", { class: "mode", text: `${total} earned${pendingTotal ? `, ${pendingTotal} pending` : ""}` })),
+    h("p", { class: "desc", text: "Every approved project earns you 1 InnoBit. Projects still waiting for approval show as pending until they are approved." }),
     h("ol", { class: "bits" }, board.map((e, i) => {
       const who = [
         (e.github || e.avatar) && h("img", { src: e.avatar || `https://github.com/${e.github}.png?size=40`, alt: "", loading: "lazy" }),
@@ -169,7 +172,7 @@ function innoBitsEl() {
       return h("li", { title: e.projects.join(", ") },
         h("span", { class: "bits-rank", text: i + 1 }),
         e.github ? h("a", { href: `https://github.com/${e.github}`, target: "_blank", rel: "noopener" }, who) : h("span", { class: "bits-who" }, who),
-        h("span", { class: "bits-count", text: `${e.count} InnoBit${e.count === 1 ? "" : "s"}` }));
+        h("span", { class: "bits-count" + (e.count ? "" : " none"), text: `${e.count} InnoBit${e.count === 1 ? "" : "s"}` + (e.pending ? ` · ${e.pending} pending` : "") }));
     })));
 }
 

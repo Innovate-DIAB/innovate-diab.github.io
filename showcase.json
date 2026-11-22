@@ -8,7 +8,8 @@
       "description": "A rocket-shaped cookie cutter, made because they love rockets and space exploration.",
       "type": "hardware",
       "stl": "assets/models/rocket-cookie-cutter-0296494c.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/rocket-cookie-cutter-0296494c.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/rocket-cookie-cutter-0296494c.stl",
+      "status": "approved"
     },
     {
       "name": "doge-cookie-cutter",
@@ -18,7 +19,8 @@
       "description": "A cookie cutter in the shape of Doge the dog, because of a love for dogs and the Shiba Inu breed.",
       "type": "hardware",
       "stl": "assets/models/doge-cookie-cutter-03d41bd4.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/doge-cookie-cutter-03d41bd4.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/doge-cookie-cutter-03d41bd4.stl",
+      "status": "approved"
     },
     {
       "name": "my-star-cookie",
@@ -28,7 +30,8 @@
       "description": "A star cookie cutter. Chosen because Sai is a STAR!",
       "type": "hardware",
       "stl": "assets/models/my-star-cookie-ef74e070.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/my-star-cookie-ef74e070.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/my-star-cookie-ef74e070.stl",
+      "status": "pending"
     },
     {
       "name": "car-chassis-cookie-cutter",
@@ -38,7 +41,8 @@
       "description": "A car chassis shaped cookie cutter, because Aditya loves cars and thought it would be a unique, cool shape to cut cookies in.",
       "type": "hardware",
       "stl": "assets/models/car-chasis-cookie-cutter-9ef2d904.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/car-chasis-cookie-cutter-9ef2d904.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/car-chasis-cookie-cutter-9ef2d904.stl",
+      "status": "approved"
     },
     {
       "name": "fc-barcelona-cookie-cutter",
@@ -47,7 +51,8 @@
       "description": "An FC Barcelona cookie cutter, made because they are the greatest club in the world.",
       "type": "hardware",
       "stl": "assets/models/fc-barcelona-cookie-cutter-09c415b6.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/fc-barcelona-cookie-cutter-09c415b6.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/fc-barcelona-cookie-cutter-09c415b6.stl",
+      "status": "approved"
     },
     {
       "name": "my-tennis-ball",
@@ -57,7 +62,19 @@
       "description": "A tennis ball, designed in Onshape.",
       "type": "hardware",
       "stl": "assets/models/my-tennis-ball-ff879175.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/my-tennis-ball-ff879175.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/my-tennis-ball-ff879175.stl",
+      "status": "pending"
+    },
+    {
+      "name": "f1-car",
+      "title": "F1 Car",
+      "author": "Saikrish Elangovan",
+      "github": "Saigamer007pro",
+      "status": "pending",
+      "description": "An F1 car built in Onshape, because he loves F1. PS: he supports Ferrari.",
+      "type": "hardware",
+      "stl": "assets/models/f1-car-c066830b.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/f1-car-c066830b.stl"
     }
   ]
 }
