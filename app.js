@@ -241,6 +241,7 @@ function render() {
       h("div", { class: "hero-actions" },
         safeUrl(config.club.signupUrl) && h("a", { class: "btn", href: config.club.signupUrl, target: "_blank", rel: "noopener" }, "Sign up"),
         h("a", { class: "btn ghost", href: "#submit" }, "Add your project"),
+        safeUrl(config.club.websiteUrl) && h("a", { class: "btn ghost", href: config.club.websiteUrl, target: "_blank", rel: "noopener" }, "Our website"),
         safeUrl(config.club.tiktokUrl) && h("a", { class: "btn ghost", href: config.club.tiktokUrl, target: "_blank", rel: "noopener" }, "TikTok"),
         safeUrl(config.club.instagramUrl) && h("a", { class: "btn ghost", href: config.club.instagramUrl, target: "_blank", rel: "noopener" }, "Instagram"),
         safeUrl(config.club.youtubeUrl) && h("a", { class: "btn ghost", href: config.club.youtubeUrl, target: "_blank", rel: "noopener" }, "YouTube"),

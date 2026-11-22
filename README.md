@@ -18,6 +18,7 @@ Hack Club also runs programs where you ship a project and get something back for
 
 - DIAB students (internal): we meet on Wednesday or Monday at lunch. We send the exact day via email each week.
 - Other schools (external): we meet online every Friday at 4:00 PM GST (GMT+4).
+- Visit our [club website](https://innovate-diab.github.io/website-hackclub/).
 - Follow us on [TikTok](https://www.tiktok.com/@innovatediab) to see what we're up to.
 - Follow us on [Instagram](https://www.instagram.com/innovateat_diab/) too.
 - Watch us on [YouTube](https://www.youtube.com/@InnovateDIAB).
