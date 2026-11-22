@@ -48,6 +48,16 @@
       "type": "hardware",
       "stl": "assets/models/fc-barcelona-cookie-cutter-09c415b6.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/fc-barcelona-cookie-cutter-09c415b6.stl"
+    },
+    {
+      "name": "my-tennis-ball",
+      "title": "My Tennis Ball",
+      "author": "Saikrish Elangovan",
+      "github": "Saigamer007pro",
+      "description": "A tennis ball, designed in Onshape.",
+      "type": "hardware",
+      "stl": "assets/models/my-tennis-ball-ff879175.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/my-tennis-ball-ff879175.stl"
     }
   ]
 }
