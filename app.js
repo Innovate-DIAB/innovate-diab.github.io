@@ -231,7 +231,10 @@ function render() {
         onclick: () => { state.type = key; renderBody(); },
       }, label)));
   const jump = h("nav", { class: "jump", "aria-label": "Workshops" },
-    config.sections.map((s) => h("a", { href: "#" + s.id, text: s.title })));
+    [...config.sections.map((s) => h("a", { href: "#" + s.id, text: s.title,
+        onclick: state.tab === "leaderboard" ? (e) => { e.preventDefault(); setTab("projects"); document.getElementById(s.id)?.scrollIntoView(); } : null })),
+     h("a", { href: "#leaderboard", class: state.tab === "leaderboard" ? "on" : "", text: "Leaderboard",
+        onclick: (e) => { e.preventDefault(); if (state.tab !== "leaderboard") setTab("leaderboard"); } })]);
 
   app.replaceChildren(...[
     h("header", { class: "hero" }, h("div", { class: "wrap" },
@@ -254,7 +257,8 @@ function render() {
       h("a", { class: "tab", role: "tab", href: "#leaderboard", "aria-selected": String(state.tab === "leaderboard"), text: "Leaderboard",
         onclick: (e) => { e.preventDefault(); setTab("leaderboard"); } }))),
     ...(state.tab === "leaderboard"
-      ? [h("main", { class: "wrap" }, innoBitsEl() || h("div", { class: "empty" }, h("p", { text: "No InnoBits yet." })))]
+      ? [h("div", { class: "bar" }, h("div", { class: "wrap" }, jump)),
+        h("main", { class: "wrap" }, innoBitsEl() || h("div", { class: "empty" }, h("p", { text: "No InnoBits yet." })))]
       : [
         h("div", { class: "bar" }, h("div", { class: "wrap" }, search, chips, jump)),
         h("main", { class: "wrap", id: "sections" }, sections.length ? sections : h("div", { class: "empty" }, h("p", { text: "No projects match that." }))),
