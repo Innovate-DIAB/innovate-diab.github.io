@@ -87,6 +87,68 @@
       "type": "hardware",
       "stl": "assets/models/ferrari-cookie-cutter-159c35a4.step",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/ferrari-cookie-cutter-159c35a4.step"
+    },
+    {
+      "name": "candy-cane-cookie-cutter",
+      "title": "Candy Cane Cookie Cutter",
+      "author": "Inayat Mahajan",
+      "status": "pending",
+      "description": "A candy cane cookie cutter, made because Christmas is a favourite festival and candy canes are part of it.",
+      "type": "hardware",
+      "stl": "assets/models/candy-cane-cookie-cutter-1dc59f8a.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/candy-cane-cookie-cutter-1dc59f8a.stl"
+    },
+    {
+      "name": "snorlax-cookie-cliker",
+      "title": "Snorlax Cookie Cutter",
+      "author": "Reyansh Singh",
+      "status": "pending",
+      "description": "Made because Snorlax is a favourite Pok\u00e9mon, and Snorlax would love eating cookies. The edges are thicker than the guide asked for because of an extruder limit, which makes it more sturdy.",
+      "type": "hardware",
+      "stl": "assets/models/snorlax-cookie-cliker-782fb546.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/snorlax-cookie-cliker-782fb546.stl"
+    },
+    {
+      "name": "b-2-bomber-cookie-cutter",
+      "title": "B-2 Bomber Cookie Cutter",
+      "author": "Weiyi Han",
+      "github": "weiyihan2015-maker",
+      "status": "pending",
+      "description": "A cookie cutter shaped like a B-2 stealth bomber, with a domed stick handle and a built-in support cone and web so the handle doesn't break when 3D printed.",
+      "type": "hardware",
+      "stl": "assets/models/b-2-bomber-cookie-cutter-f4b0a57c.step",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/b-2-bomber-cookie-cutter-f4b0a57c.step"
+    },
+    {
+      "name": "airplane-cookie-cutter",
+      "title": "Airplane Cookie Cutter",
+      "author": "Weiyi Han",
+      "github": "weiyihan2015-maker",
+      "status": "pending",
+      "description": "A cookie cutter shaped like an airplane, with a domed stick handle and a built-in support cone and web so the handle doesn't break when 3D printed.",
+      "type": "hardware",
+      "stl": "assets/models/airplane-cookie-cutter-21c396b4.step",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/airplane-cookie-cutter-21c396b4.step"
+    },
+    {
+      "name": "p2s-cookie-cutter",
+      "title": "P2S Cookie Cutter",
+      "author": "Reyansh Singh",
+      "status": "pending",
+      "description": "Inspired by the Bambu Lab P2S, a dream 3D printer. Eating P2S-shaped cookies every day would be fun!",
+      "type": "hardware",
+      "stl": "assets/models/p2s-cookie-cuter-c4361e9d.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/p2s-cookie-cuter-c4361e9d.stl"
+    },
+    {
+      "name": "crown-cutter",
+      "title": "Crown Cutter",
+      "author": "Viraj Chadha",
+      "status": "pending",
+      "description": "A crown cookie cutter for celebrating wins, to show that you are the king or queen.",
+      "type": "hardware",
+      "stl": "assets/models/crown-cutter-618d2731.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/crown-cutter-618d2731.stl"
     }
   ]
 }
