@@ -64,7 +64,7 @@ Leave it empty to allow everyone. Because this is a school club with minors, it'
 1. Make your project a public repo.
 2. Add your workshop's topic (gear icon next to About on the repo page).
 3. Optional: add `preview.png` to the repo root for a custom card image, and fill in the website link in About for a Live demo button.
-4. Optional: add a type topic to control the filter: `type-web`, `type-game`, `type-hardware` or `type-code`. Otherwise it's guessed from your other topics and language (`pcb`, `esp32`, `3d-printing` count as hardware, `game` or `pygame` as games).
+4. Optional: add a type topic to control the filter: `type-web`, `type-game`, `type-cad`, `type-hardware` or `type-code`. Otherwise it's guessed from your other topics and language (`pcb`, `esp32`, `3d-printing` count as hardware, `game` or `pygame` as games).
 
 ## Files
 

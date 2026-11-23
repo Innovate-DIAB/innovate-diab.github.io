@@ -28,8 +28,9 @@ async function gh(path) {
   return res.json();
 }
 
-const HARDWARE = ["hardware", "pcb", "kicad", "cad", "3d-printing", "3dprinting", "arduino", "esp32", "esp8266",
-  "raspberry-pi", "raspberrypi", "robotics", "electronics", "iot", "fusion360", "onshape", "stm32", "rp2040"];
+const CAD = ["cad", "3d-printing", "3dprinting", "3d-model", "stl", "fusion360", "onshape", "solidworks", "freecad", "blender"];
+const HARDWARE = ["hardware", "pcb", "kicad", "arduino", "esp32", "esp8266",
+  "raspberry-pi", "raspberrypi", "robotics", "electronics", "iot", "stm32", "rp2040"];
 const GAME = ["game", "games", "gamedev", "game-dev", "pygame", "unity", "godot", "phaser", "scratch-game"];
 const WEB = ["website", "web", "webapp", "web-app", "frontend", "html", "css", "nextjs", "react", "vue", "svelte", "portfolio"];
 
@@ -38,8 +39,9 @@ function classify(topics, language) {
   if (explicit) {
     const v = explicit.slice(5);
     if (v === "web") return "website";
-    if (["website", "game", "code", "hardware"].includes(v)) return v;
+    if (["website", "game", "code", "cad", "hardware"].includes(v)) return v;
   }
+  if (topics.some((t) => CAD.includes(t))) return "cad";
   if (topics.some((t) => HARDWARE.includes(t))) return "hardware";
   if (topics.some((t) => GAME.includes(t))) return "game";
   if (topics.some((t) => WEB.includes(t)) || ["HTML", "CSS"].includes(language)) return "website";

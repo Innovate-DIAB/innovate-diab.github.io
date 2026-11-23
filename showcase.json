@@ -6,7 +6,7 @@
       "author": "Agastya Johri",
       "github": "AgastyaJohriDXB",
       "description": "A rocket-shaped cookie cutter, made because they love rockets and space exploration.",
-      "type": "hardware",
+      "type": "cad",
       "stl": "assets/models/rocket-cookie-cutter-0296494c.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/rocket-cookie-cutter-0296494c.stl",
       "status": "approved"
@@ -17,7 +17,7 @@
       "author": "Aditya Jain",
       "github": "AdityaJainDXB",
       "description": "A cookie cutter in the shape of Doge the dog, because of a love for dogs and the Shiba Inu breed.",
-      "type": "hardware",
+      "type": "cad",
       "stl": "assets/models/doge-cookie-cutter-03d41bd4.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/doge-cookie-cutter-03d41bd4.stl",
       "status": "approved"
@@ -28,7 +28,7 @@
       "author": "Saikrish Elangovan",
       "github": "Saigamer007pro",
       "description": "A star cookie cutter. Chosen because Sai is a STAR!",
-      "type": "hardware",
+      "type": "cad",
       "stl": "assets/models/my-star-cookie-d2dfc28b.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/my-star-cookie-d2dfc28b.stl",
       "status": "pending"
@@ -39,7 +39,7 @@
       "author": "Aditya Jain",
       "github": "AdityaJainDXB",
       "description": "A car chassis shaped cookie cutter, because Aditya loves cars and thought it would be a unique, cool shape to cut cookies in.",
-      "type": "hardware",
+      "type": "cad",
       "stl": "assets/models/car-chasis-cookie-cutter-9ef2d904.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/car-chasis-cookie-cutter-9ef2d904.stl",
       "status": "approved"
@@ -50,7 +50,7 @@
       "author": "Akshath Karthik Rao",
       "github": "akshathrao1608",
       "description": "An FC Barcelona cookie cutter, made because they are the greatest club in the world.",
-      "type": "hardware",
+      "type": "cad",
       "stl": "assets/models/fc-barcelona-cookie-cutter-09c415b6.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/fc-barcelona-cookie-cutter-09c415b6.stl",
       "status": "approved"
@@ -61,7 +61,7 @@
       "author": "Saikrish Elangovan",
       "github": "Saigamer007pro",
       "description": "A tennis ball, designed in Onshape.",
-      "type": "hardware",
+      "type": "cad",
       "stl": "assets/models/my-tennis-ball-ff879175.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/my-tennis-ball-ff879175.stl",
       "status": "pending"
@@ -73,7 +73,7 @@
       "github": "Saigamer007pro",
       "status": "pending",
       "description": "An F1 car built in Onshape, because he loves F1. PS: he supports Ferrari.",
-      "type": "hardware",
+      "type": "cad",
       "stl": "assets/models/f1-car-c066830b.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/f1-car-c066830b.stl"
     },
@@ -84,7 +84,7 @@
       "github": "weiyihan2015-maker",
       "status": "approved",
       "description": "A Ferrari cookie cutter, made out of a love for Ferrari.",
-      "type": "hardware",
+      "type": "cad",
       "stl": "assets/models/ferrari-cookie-cutter-159c35a4.step",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/ferrari-cookie-cutter-159c35a4.step"
     },
@@ -94,7 +94,7 @@
       "author": "Inayat Mahajan",
       "status": "pending",
       "description": "A candy cane cookie cutter, made because Christmas is a favourite festival and candy canes are part of it.",
-      "type": "hardware",
+      "type": "cad",
       "stl": "assets/models/candy-cane-cookie-cutter-1dc59f8a.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/candy-cane-cookie-cutter-1dc59f8a.stl",
       "github": "inayat-m826i"
@@ -105,7 +105,7 @@
       "author": "Reyansh Singh",
       "status": "pending",
       "description": "Made because Snorlax is a favourite Pok\u00e9mon, and Snorlax would love eating cookies. The edges are thicker than the guide asked for because of an extruder limit, which makes it more sturdy.",
-      "type": "hardware",
+      "type": "cad",
       "stl": "assets/models/snorlax-cookie-cliker-782fb546.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/snorlax-cookie-cliker-782fb546.stl"
     },
@@ -116,7 +116,7 @@
       "github": "weiyihan2015-maker",
       "status": "pending",
       "description": "A cookie cutter shaped like a B-2 stealth bomber, with a domed stick handle and a built-in support cone and web so the handle doesn't break when 3D printed.",
-      "type": "hardware",
+      "type": "cad",
       "stl": "assets/models/b-2-bomber-cookie-cutter-f4b0a57c.step",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/b-2-bomber-cookie-cutter-f4b0a57c.step"
     },
@@ -127,7 +127,7 @@
       "github": "weiyihan2015-maker",
       "status": "pending",
       "description": "A cookie cutter shaped like an airplane, with a domed stick handle and a built-in support cone and web so the handle doesn't break when 3D printed.",
-      "type": "hardware",
+      "type": "cad",
       "stl": "assets/models/airplane-cookie-cutter-21c396b4.step",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/airplane-cookie-cutter-21c396b4.step"
     },
@@ -137,7 +137,7 @@
       "author": "Reyansh Singh",
       "status": "pending",
       "description": "Inspired by the Bambu Lab P2S, a dream 3D printer. Eating P2S-shaped cookies every day would be fun!",
-      "type": "hardware",
+      "type": "cad",
       "stl": "assets/models/p2s-cookie-cuter-c4361e9d.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/p2s-cookie-cuter-c4361e9d.stl"
     },
@@ -147,7 +147,7 @@
       "author": "Viraj Chadha",
       "status": "pending",
       "description": "A crown cookie cutter for celebrating wins, to show that you are the king or queen.",
-      "type": "hardware",
+      "type": "cad",
       "stl": "assets/models/crown-cutter-618d2731.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/crown-cutter-618d2731.stl",
       "github": "VirajSinghChadha"

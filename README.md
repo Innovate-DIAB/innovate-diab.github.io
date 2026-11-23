@@ -37,10 +37,10 @@ Every approved project earns you 1 InnoBit. Projects still waiting for approval 
 2. On the repo page, click the little gear next to **About** and add your workshop's topic. For BakeBuild that's `diab-hc-bakebuild`.
 3. Write a one-line description in About. If your project is live somewhere, paste the link there too and a Live demo button shows up.
 4. Want a nice picture on your card? Put a screenshot called `preview.png` at the top level of the repo.
-5. Want it filed under the right category? Add one more topic: `type-web`, `type-game`, `type-hardware` or `type-code`. We guess if you don't.
+5. Want it filed under the right category? Add one more topic: `type-web`, `type-game`, `type-cad`, `type-hardware` or `type-code`. We guess if you don't.
 6. BakeBuild projects get a quick look from a club leader first. Hit **Submit a project** on the site and fill in the short form.
 
-Building hardware? Throw your KiCad or CAD files, the code, and some photos in the repo. A photo of the board next to the one that didn't work is always popular.
+Building hardware (PCBs, circuits)? Throw your KiCad files, the code, and some photos in the repo. A photo of the board next to the one that didn't work is always popular.
 
 ## A README your project will thank you for
 

@@ -1,8 +1,8 @@
 // Gallery front end. Reads config.json and data.json, builds the page.
 // All text that comes from GitHub is added with textContent, never innerHTML.
 
-const TYPE_LABELS = { all: "All", website: "Websites", game: "Games", code: "Coding", hardware: "Hardware" };
-const TYPE_BADGE = { website: "Website", game: "Game", code: "Code", hardware: "Hardware" };
+const TYPE_LABELS = { all: "All", website: "Websites", game: "Games", code: "Coding", cad: "CAD design", hardware: "Hardware" };
+const TYPE_BADGE = { website: "Website", game: "Game", code: "Code", cad: "CAD", hardware: "Hardware" };
 const state = { type: "all", q: "", tab: location.hash === "#leaderboard" ? "leaderboard" : "projects" };
 let config, data, showcase = {};
 
