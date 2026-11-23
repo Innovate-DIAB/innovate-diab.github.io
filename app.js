@@ -49,8 +49,8 @@ function matches(p) {
 function stlCard(p) {
   const box = h("div", { class: "viewer", "aria-label": `3D model of ${p.title}`, role: "img" },
     h("span", { class: "viewer-hint", text: "Loading 3D model..." }));
-  import("./viewer.js").then((m) => m.mountStl(box, p.stl))
-    .catch((err) => { console.error(err); box.querySelector(".viewer-hint").textContent = "3D preview not available in this browser."; });
+  const fail = () => { const hint = box.querySelector(".viewer-hint"); if (hint) hint.textContent = "3D preview not available in this browser."; };
+  import("./viewer.js").then((m) => m.lazyStl(box, p.stl, fail)).catch((err) => { console.error(err); fail(); });
   box.append(h("span", { class: "viewer-tip", text: "Drag to rotate" }));
   return h("article", { class: "card" },
     box,

@@ -32,10 +32,24 @@ async function loadStep(url) {
   return geos.length === 1 ? geos[0] : mergeGeometries(geos);
 }
 
-export function mountStl(box, url, { color = 0xec3750 } = {}) {
+const geoCache = new Map();
+function getGeometry(url) {
+  if (!geoCache.has(url)) {
+    const p = (/\.(step|stp)$/i.test(url)
+      ? loadStep(url)
+      : new Promise((res, rej) => new STLLoader().load(url, res, undefined, rej)))
+      .then((geo) => { geo.computeVertexNormals(); geo.center(); geo.computeBoundingSphere(); return geo; });
+    p.catch(() => geoCache.delete(url));
+    geoCache.set(url, p);
+  }
+  return geoCache.get(url);
+}
+
+// One live WebGL view. Browsers allow only ~8-16 at once, so lazyStl() makes them while on screen and frees them after.
+function mountStl(box, url, color = 0xec3750) {
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-  box.append(renderer.domElement);
+  box.prepend(renderer.domElement);
 
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(40, 1, 0.1, 5000);
@@ -59,27 +73,50 @@ export function mountStl(box, url, { color = 0xec3750 } = {}) {
     camera.aspect = w / h;
     camera.updateProjectionMatrix();
   };
-  new ResizeObserver(resize).observe(box);
+  const ro = new ResizeObserver(resize);
+  ro.observe(box);
   resize();
 
-  const getGeometry = /\.(step|stp)$/i.test(url)
-    ? loadStep(url)
-    : new Promise((res, rej) => new STLLoader().load(url, res, undefined, rej));
-  return getGeometry.then((geo) => {
-      geo.computeVertexNormals();
-      geo.center();
-      geo.computeBoundingSphere();
-      const mesh = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({ color, roughness: 0.45, metalness: 0.1 }));
-      mesh.rotation.x = -Math.PI / 2; // STL is Z-up
-      scene.add(mesh);
-      const r = geo.boundingSphere.radius;
-      camera.position.set(0, r * 1.2, r * 2.6);
-      camera.near = r / 50; camera.far = r * 50; camera.updateProjectionMatrix();
-      controls.update();
-
-      let visible = true;
-      new IntersectionObserver(([e]) => { visible = e.isIntersecting; }).observe(box);
-      renderer.setAnimationLoop(() => { if (visible) { controls.update(); renderer.render(scene, camera); } });
-      box.classList.add("ready");
+  let dead = false;
+  const mat = new THREE.MeshStandardMaterial({ color, roughness: 0.45, metalness: 0.1 });
+  const ready = getGeometry(url).then((geo) => {
+    if (dead) return;
+    const mesh = new THREE.Mesh(geo, mat);
+    mesh.rotation.x = -Math.PI / 2; // STL is Z-up
+    scene.add(mesh);
+    const r = geo.boundingSphere.radius;
+    camera.position.set(0, r * 1.2, r * 2.6);
+    camera.near = r / 50; camera.far = r * 50; camera.updateProjectionMatrix();
+    controls.update();
+    renderer.setAnimationLoop(() => { controls.update(); renderer.render(scene, camera); });
+    box.classList.add("ready");
   });
+
+  return {
+    ready,
+    dispose() {
+      dead = true;
+      renderer.setAnimationLoop(null);
+      ro.disconnect();
+      controls.dispose();
+      mat.dispose();
+      renderer.dispose();
+      renderer.forceContextLoss();
+      renderer.domElement.remove();
+      box.classList.remove("ready");
+    },
+  };
+}
+
+export function lazyStl(box, url, onError) {
+  let view = null;
+  new IntersectionObserver(([e]) => {
+    if (e.isIntersecting && !view) {
+      view = mountStl(box, url);
+      view.ready.catch((err) => { console.error(err); onError?.(err); });
+    } else if (!e.isIntersecting && view) {
+      view.dispose();
+      view = null;
+    }
+  }, { rootMargin: "250px" }).observe(box);
 }

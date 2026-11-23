@@ -96,7 +96,8 @@
       "description": "A candy cane cookie cutter, made because Christmas is a favourite festival and candy canes are part of it.",
       "type": "hardware",
       "stl": "assets/models/candy-cane-cookie-cutter-1dc59f8a.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/candy-cane-cookie-cutter-1dc59f8a.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/candy-cane-cookie-cutter-1dc59f8a.stl",
+      "github": "inayat-m826i"
     },
     {
       "name": "snorlax-cookie-cliker",
@@ -148,7 +149,8 @@
       "description": "A crown cookie cutter for celebrating wins, to show that you are the king or queen.",
       "type": "hardware",
       "stl": "assets/models/crown-cutter-618d2731.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/crown-cutter-618d2731.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/crown-cutter-618d2731.stl",
+      "github": "VirajSinghChadha"
     }
   ]
 }
