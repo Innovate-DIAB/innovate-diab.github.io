@@ -270,6 +270,16 @@
       "type": "cad",
       "stl": "assets/models/bell-cookie-clicker-af47c408.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/bell-cookie-clicker-af47c408.stl"
+    },
+    {
+      "name": "malaysia-race-track-cookie-cutter",
+      "title": "Malaysia International Race Track Cookie Cutter",
+      "author": "Vivaan Daga",
+      "status": "pending",
+      "description": "A cookie cutter in the shape of the Malaysian F1 race track, an iconic track and the first F1 race they watched.",
+      "type": "cad",
+      "stl": "assets/models/malaysia-international-race-track-cookie-cutter-51398aca.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/malaysia-international-race-track-cookie-cutter-51398aca.stl"
     }
   ],
   "club": [
@@ -281,8 +291,8 @@
       "status": "pending",
       "description": "A keychain that represents the club, Innovate at DIAB.",
       "type": "cad",
-      "noModel": true,
-      "url": "https://www.printables.com/model/1927660-innovate-keychain"
+      "url": "https://www.printables.com/model/1927660-innovate-keychain",
+      "stl": "assets/models/innovate-keychain.stl"
     }
   ]
 }
