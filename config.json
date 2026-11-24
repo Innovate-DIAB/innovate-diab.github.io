@@ -13,7 +13,10 @@
     "signupUrl": "https://forms.cloud.microsoft/r/DDFd4ajd7E",
     "logo": "assets/logo-full.png"
   },
-  "leaderboardExclude": ["AdityaJainDXB", "Saigamer007pro"],
+  "leaderboardExclude": [
+    "AdityaJainDXB",
+    "Saigamer007pro"
+  ],
   "defaultMode": "auto",
   "allowedOwners": [],
   "sections": [
@@ -22,6 +25,13 @@
       "title": "BakeBuild",
       "description": "Projects from the BakeBuild workshop.",
       "topic": "diab-hc-bakebuild",
+      "mode": "manual"
+    },
+    {
+      "id": "club",
+      "title": "Club projects",
+      "description": "Things we made for the club that aren't part of a workshop.",
+      "topic": "diab-hc-club",
       "mode": "manual"
     }
   ]

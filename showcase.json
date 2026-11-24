@@ -270,7 +270,9 @@
       "type": "cad",
       "stl": "assets/models/bell-cookie-clicker-af47c408.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/bell-cookie-clicker-af47c408.stl"
-    },
+    }
+  ],
+  "club": [
     {
       "name": "innovate-keychain",
       "title": "Innovate Keychain",
