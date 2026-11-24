@@ -4,7 +4,7 @@
 
 Once a week a bunch of us at Dubai International Academy Al Barsha sit down, pick something to build, and try to get it working before the bell. Sometimes it does. Sometimes it catches fire a little. Either way it goes in the gallery.
 
-The gallery lives here: **https://innovate-diab.github.io**
+The gallery lives here: **https://innovatediab-gallery.dino.icu**
 
 You don't need to know how to code. Most of us didn't when we started. You just need to be curious enough to break something and then fix it.
 

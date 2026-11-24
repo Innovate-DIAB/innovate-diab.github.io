@@ -8,7 +8,7 @@ A gallery of member projects, grouped by workshop. It runs on GitHub Pages and r
 2. In the org, create a public repo named `innovate-diab.github.io` and upload everything in this folder to it.
 3. Check `config.json`: the org is already set to `Innovate-DIAB`. Change the club name and tagline if you like.
 4. In the repo go to Settings, then Pages, and set Source to **GitHub Actions**.
-5. Go to the Actions tab, open "Update gallery" and click Run workflow. After a minute your site is live at `https://innovate-diab.github.io`.
+5. Go to the Actions tab, open "Update gallery" and click Run workflow. After a minute your site is live at `https://innovatediab-gallery.dino.icu`.
 
 ## Workshops (sections)
 
