@@ -280,6 +280,48 @@
       "type": "cad",
       "stl": "assets/models/malaysia-international-race-track-cookie-cutter-51398aca.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/malaysia-international-race-track-cookie-cutter-51398aca.stl"
+    },
+    {
+      "name": "the-duck",
+      "title": "The Duck",
+      "author": "Zayed Ahmad Alhammadi",
+      "status": "pending",
+      "description": "A duck. Ducks are cool and funny, and no one can diss a duck.",
+      "type": "cad",
+      "stl": "assets/models/the-duck-1edb30c6.step",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/the-duck-1edb30c6.step"
+    },
+    {
+      "name": "luigis-mansion-ghost",
+      "title": "The Ghost from Luigi's Mansion",
+      "author": "Zayed Ahmad Alhammadi",
+      "status": "pending",
+      "description": "A ghost from Luigi's Mansion, made just because it was a fun picture to model.",
+      "type": "cad",
+      "stl": "assets/models/the-ghost-from-luigi-s-mansion-d7815b4a.step",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/the-ghost-from-luigi-s-mansion-d7815b4a.step"
+    },
+    {
+      "name": "luffys-straw-hat-cookie-cutter",
+      "title": "Luffy's Straw Hat Cookie Cutter",
+      "author": "Salvador Lopes",
+      "github": "SalFluX99",
+      "status": "pending",
+      "description": "A cookie cutter of Luffy's straw hat. One Piece is a favourite show, and the hat makes a unique cutter.",
+      "type": "cad",
+      "stl": "assets/models/luffy-s-straw-hat-cookie-cutter-43cb823f.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/luffy-s-straw-hat-cookie-cutter-43cb823f.stl"
+    },
+    {
+      "name": "pikachu-cookie-cutter",
+      "title": "Pikachu Cookie Cutter",
+      "author": "Salvador Lopes",
+      "github": "SalFluX99",
+      "status": "pending",
+      "description": "A cookie cutter of Pikachu's face, the iconic Pokemon. Quite unique, and a fun project to make.",
+      "type": "cad",
+      "stl": "assets/models/pikachu-cookie-cutter-17490710.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/pikachu-cookie-cutter-17490710.stl"
     }
   ],
   "club": [
