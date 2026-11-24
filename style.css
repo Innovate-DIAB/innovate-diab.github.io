@@ -161,3 +161,5 @@ h1, h2, h3 { letter-spacing: var(--hc-tracking-display); line-height: 1.1; }
 .hero { background: var(--hc-gradient-red-wash, transparent); }
 a:focus-visible, .btn:focus-visible, .chip:focus-visible { box-shadow: var(--hc-shadow-focus); outline: none; }
 .card h3, .howto h3, .meet h2 { font-family: var(--hc-font-sans); font-weight: 700; }
+.viewer.no-model { display: grid; place-items: center; }
+.viewer.no-model img { height: 70%; width: auto; border-radius: 14px; opacity: .9; }

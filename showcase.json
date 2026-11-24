@@ -151,6 +151,136 @@
       "stl": "assets/models/crown-cutter-618d2731.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/crown-cutter-618d2731.stl",
       "github": "VirajSinghChadha"
+    },
+    {
+      "name": "shoes-cookie-cutter",
+      "title": "Shoes Cookie Cutter",
+      "author": "Vivaan Daga",
+      "status": "pending",
+      "description": "A shoe shaped cookie cutter, made out of a love for shoes, especially formal shoes.",
+      "type": "cad",
+      "stl": "assets/models/shoes-cookie-cutter-62efefad.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/shoes-cookie-cutter-62efefad.stl"
+    },
+    {
+      "name": "batman-cookie-cutter",
+      "title": "Batman Cookie Cutter",
+      "author": "Inayat Mahajan",
+      "github": "inayat-m826i",
+      "status": "pending",
+      "description": "A Batman cookie cutter, because lots of people like Batman and his logo looks cool.",
+      "type": "cad",
+      "stl": "assets/models/batman-cookie-cutter-0e24a7f0.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/batman-cookie-cutter-0e24a7f0.stl"
+    },
+    {
+      "name": "buddh-circuit-cookie-cutter",
+      "title": "Buddh International Circuit Cookie Cutter",
+      "author": "Arjun Chopra",
+      "github": "Arjunisc00l67",
+      "status": "pending",
+      "description": "A racing track version of the Buddh International Circuit, an F1 circuit in India, made out of a love for F1 and for home.",
+      "type": "cad",
+      "stl": "assets/models/buddh-international-circuit-racing-track-24b4b49f.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/buddh-international-circuit-racing-track-24b4b49f.stl"
+    },
+    {
+      "name": "3d-brick-cookie-cutter",
+      "title": "3D Brick Cookie Cutter",
+      "author": "Ansh Mittal",
+      "github": "AURAnsh",
+      "status": "pending",
+      "description": "A CAD challenge: a 3D isometric brick image mapped onto a 2D plane, then extruded into a cookie cutter.",
+      "type": "cad",
+      "stl": "assets/models/3d-brick-cookie-cutter-842ad497.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/3d-brick-cookie-cutter-842ad497.stl"
+    },
+    {
+      "name": "orange-slice-cookie-cutter",
+      "title": "Orange Slice Cookie Cutter",
+      "author": "Ansh Mittal",
+      "github": "AURAnsh",
+      "status": "pending",
+      "description": "A CAD challenge: an orange slice, a more complex shape that can't be made with simple lines and arcs.",
+      "type": "cad",
+      "stl": "assets/models/orange-slice-cookie-cutter-d2f6d602.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/orange-slice-cookie-cutter-d2f6d602.stl"
+    },
+    {
+      "name": "sao-paulo-f1-track-cookie-cutter",
+      "title": "Sao Paulo F1 Track Cookie Cutter",
+      "author": "Agastya Johri",
+      "github": "AgastyaJohriDXB",
+      "status": "pending",
+      "description": "A cookie inspired by the map of the Sao Paulo F1 track, from a new interest in F1.",
+      "type": "cad",
+      "stl": "assets/models/s-o-paulo-f1-track-cookie-cutter-eb04870f.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/s-o-paulo-f1-track-cookie-cutter-eb04870f.stl"
+    },
+    {
+      "name": "christmas-tree-cookie-cutter",
+      "title": "Christmas Tree Cookie Cutter",
+      "author": "Agastya Johri",
+      "github": "AgastyaJohriDXB",
+      "status": "pending",
+      "description": "Christmas is almost here, and what better way to celebrate than Christmas themed cookies!",
+      "type": "cad",
+      "stl": "assets/models/christmas-tree-cookie-cutter-9a8d056e.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/christmas-tree-cookie-cutter-9a8d056e.stl"
+    },
+    {
+      "name": "abu-dhabi-f1-track-cookie-cutter",
+      "title": "Abu Dhabi F1 Racing Track",
+      "author": "Arjun Chopra",
+      "github": "Arjunisc00l67",
+      "status": "pending",
+      "description": "The Yas Marina Circuit in Abu Dhabi used in F1, special because Abu Dhabi is close to home.",
+      "type": "cad",
+      "stl": "assets/models/abu-dhabi-f1-racing-track-d692e67a.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/abu-dhabi-f1-racing-track-d692e67a.stl"
+    },
+    {
+      "name": "monaco-f1-track-cookie-cutter",
+      "title": "Monaco F1 Racing Track",
+      "author": "Arjun Chopra",
+      "github": "Arjunisc00l67",
+      "status": "pending",
+      "description": "A layout of the Monaco F1 track, showing how F1 cars race on it.",
+      "type": "cad",
+      "stl": "assets/models/monaco-f1-racing-track-6e0b047f.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/monaco-f1-racing-track-6e0b047f.stl"
+    },
+    {
+      "name": "flower-cookie-cutter",
+      "title": "Flower Cookie Cutter",
+      "author": "Inayat Mahajan",
+      "github": "inayat-m826i",
+      "status": "pending",
+      "description": "A flower cookie cutter, made because flowers would look nice as cookies.",
+      "type": "cad",
+      "stl": "assets/models/flower-cookie-cutter-a47472ae.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/flower-cookie-cutter-a47472ae.stl"
+    },
+    {
+      "name": "bell-cookie-clicker",
+      "title": "Bell Cookie Cutter",
+      "author": "Reyansh Singh",
+      "status": "pending",
+      "description": "Made because belts are a fun type of cookie to make. It wasn't too hard, and it was nice.",
+      "type": "cad",
+      "stl": "assets/models/bell-cookie-clicker-af47c408.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/bell-cookie-clicker-af47c408.stl"
+    },
+    {
+      "name": "innovate-keychain",
+      "title": "Innovate Keychain",
+      "author": "Aditya Jain",
+      "github": "AdityaJainDXB",
+      "status": "pending",
+      "description": "A keychain that represents the club, Innovate at DIAB.",
+      "type": "cad",
+      "noModel": true,
+      "url": "https://www.printables.com/model/1927660-innovate-keychain"
     }
   ]
 }

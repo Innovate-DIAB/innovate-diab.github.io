@@ -47,11 +47,14 @@ function matches(p) {
 }
 
 function stlCard(p) {
-  const box = h("div", { class: "viewer", "aria-label": `3D model of ${p.title}`, role: "img" },
-    h("span", { class: "viewer-hint", text: "Loading 3D model..." }));
+  const box = p.stl
+    ? h("div", { class: "viewer", "aria-label": `3D model of ${p.title}`, role: "img" }, h("span", { class: "viewer-hint", text: "Loading 3D model..." }))
+    : h("div", { class: "viewer ready no-model" }, config.club.logo && h("img", { src: config.club.logo, alt: "" }));
   const fail = () => { const hint = box.querySelector(".viewer-hint"); if (hint) hint.textContent = "3D preview not available in this browser."; };
-  import("./viewer.js").then((m) => m.lazyStl(box, p.stl, fail)).catch((err) => { console.error(err); fail(); });
-  box.append(h("span", { class: "viewer-tip", text: "Drag to rotate" }));
+  if (p.stl) {
+    import("./viewer.js").then((m) => m.lazyStl(box, p.stl, fail)).catch((err) => { console.error(err); fail(); });
+    box.append(h("span", { class: "viewer-tip", text: "Drag to rotate" }));
+  }
   return h("article", { class: "card" },
     box,
     h("div", { class: "card-body" },
@@ -66,12 +69,12 @@ function stlCard(p) {
         isApproved(p) ? h("span", { class: "badge bit" }, "+1 InnoBit") : h("span", { class: "badge pend" }, "Pending"),
         isApproved(p) ? h("span", { class: "badge ok" }, "Approved") : h("span", { class: "badge wip" }, "In progress")),
       h("div", { class: "links" },
-        h("a", { href: p.url, target: "_blank", rel: "noopener" }, "View on GitHub"),
-        h("a", { href: p.stl, download: "" }, /\.(step|stp)$/i.test(p.stl) ? "Download STEP" : "Download STL"))));
+        h("a", { href: p.url, target: "_blank", rel: "noopener" }, p.stl ? "View on GitHub" : "View model"),
+        p.stl && h("a", { href: p.stl, download: "" }, /\.(step|stp)$/i.test(p.stl) ? "Download STEP" : "Download STL"))));
 }
 
 function card(p) {
-  if (p.stl) return stlCard(p);
+  if (p.stl || p.noModel) return stlCard(p);
   const thumb = h("img", {
     class: "thumb", loading: "lazy", alt: "",
     src: `https://raw.githubusercontent.com/${p.full_name}/HEAD/preview.png`,
