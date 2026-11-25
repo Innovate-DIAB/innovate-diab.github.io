@@ -129,12 +129,9 @@ function sectionEl(s) {
   const filtering = state.type !== "all" || state.q.trim();
   if (filtering && shown.length === 0) return null;
 
-  const mode = modeOf(s);
   return h("section", { class: "section", id: s.id },
     h("div", { class: "section-head" },
-      h("h2", { text: s.title }),
-      h("span", { class: "mode", title: mode === "auto" ? "Shows up automatically" : "Approved by a club leader" },
-        mode === "auto" ? "Auto" : "Approved")),
+      h("h2", { text: s.title })),
     s.description && h("p", { class: "desc", text: s.description }),
     shown.length
       ? h("div", { class: "grid" }, shown.map(card))
