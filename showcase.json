@@ -314,7 +314,8 @@
       "type": "cad",
       "stl": "assets/models/the-duck-1edb30c6.step",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/the-duck-1edb30c6.step",
-      "coins": 8
+      "coins": 8,
+      "github": "seriouZly615"
     },
     {
       "name": "luigis-mansion-ghost",
@@ -325,7 +326,8 @@
       "type": "cad",
       "stl": "assets/models/the-ghost-from-luigi-s-mansion-d7815b4a.step",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/the-ghost-from-luigi-s-mansion-d7815b4a.step",
-      "coins": 8
+      "coins": 8,
+      "github": "seriouZly615"
     },
     {
       "name": "luffys-straw-hat-cookie-cutter",
@@ -370,7 +372,8 @@
       "type": "cad",
       "stl": "assets/models/christmas-present-37463f38.step",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/christmas-present-37463f38.step",
-      "coins": 8
+      "coins": 8,
+      "github": "seriouZly615"
     }
   ],
   "club": [
@@ -395,7 +398,8 @@
       "type": "website",
       "description": "A responsive one-page field guide to the eight planets, with a custom orbit illustration, concise planet profiles, filters by planet type, a random space-fact button and a light/dark theme toggle.",
       "url": "https://github.com/seriouZly615/orbit-club",
-      "demo": "https://seriouzly615.github.io/orbit-club/"
+      "demo": "https://seriouzly615.github.io/orbit-club/",
+      "github": "seriouZly615"
     }
   ]
 }

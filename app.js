@@ -78,7 +78,10 @@ function webCard(p) {
     h("img", { class: "thumb placeholder", alt: "", src: config.club.logo || "" }),
     h("div", { class: "card-body" },
       h("h3", {}, h("a", { href: p.demo || p.url, target: "_blank", rel: "noopener" }, p.title)),
-      h("span", { class: "author" }, p.author),
+      p.github
+        ? h("a", { class: "author", href: `https://github.com/${p.github}`, target: "_blank", rel: "noopener" },
+            h("img", { src: `https://github.com/${p.github}.png?size=40`, alt: "", loading: "lazy" }), p.author)
+        : h("span", { class: "author" }, p.author),
       h("p", {}, p.description),
       h("div", { class: "meta" },
         h("span", { class: "badge" }, TYPE_BADGE[p.type] || "Website"),
