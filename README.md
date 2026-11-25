@@ -29,7 +29,7 @@ Hack Club also runs programs where you ship a project and get something back for
 
 ## InnoBits
 
-InnoBits show who does how much work and contributes most to the club. Each approved ship earns InnoBits equal to the coins Hack Club gives for it (1 InnoBit = 1 coin). Projects still waiting for approval show as pending. The gallery counts everything automatically and shows everyone's total in the InnoBits section.
+InnoBits show who does how much work and contributes most to the club. Each approved ship earns InnoBits based on the coins Hack Club gives for it: 5-7 coins = 1, 8-11 = 2, 12-17 = 3, 18-24 = 4, 25 or more = 5. Projects still waiting for approval show as pending. The gallery counts everything automatically and shows everyone's total in the InnoBits section.
 
 ## Get your project on the wall
 
