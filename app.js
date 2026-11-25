@@ -69,7 +69,7 @@ function stlCard(p) {
         isApproved(p) ? h("span", { class: "badge bit" }, `+${bitsOf(p)} InnoBit${bitsOf(p) === 1 ? "" : "s"}`) : h("span", { class: "badge pend" }, "Pending"),
         isApproved(p) ? h("span", { class: "badge ok" }, "Approved") : h("span", { class: "badge wip" }, "In progress")),
       h("div", { class: "links" },
-        h("a", { href: p.url, target: "_blank", rel: "noopener" }, p.stl ? "View on GitHub" : "View model"),
+        h("a", { href: p.url, target: "_blank", rel: "noopener" }, p.url.startsWith("https://github.com/") ? "View on GitHub" : "View model"),
         p.stl && h("a", { href: p.stl, download: "" }, /\.(step|stp)$/i.test(p.stl) ? "Download STEP" : "Download STL"))));
 }
 

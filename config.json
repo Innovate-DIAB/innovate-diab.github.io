@@ -29,16 +29,16 @@
     },
     {
       "id": "vibes",
-      "title": "Program Vibes",
-      "description": "Coding projects: websites and programs.",
+      "title": "Vibes",
+      "description": "Websites built in the Vibes workshop.",
       "topic": "diab-hc-vibes",
       "mode": "manual"
     },
     {
-      "id": "club",
-      "title": "Club projects",
-      "description": "Things we made for the club that aren't part of a workshop.",
-      "topic": "diab-hc-club",
+      "id": "fusering",
+      "title": "Fusering",
+      "description": "Keyrings designed in CAD for the Fusering workshop.",
+      "topic": "diab-hc-fusering",
       "mode": "manual"
     }
   ]

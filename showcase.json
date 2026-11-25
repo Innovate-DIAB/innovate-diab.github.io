@@ -446,19 +446,6 @@
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/orange-slice-cookie-cutter-a0cabf20.stl"
     }
   ],
-  "club": [
-    {
-      "name": "innovate-keychain",
-      "title": "InnoBit Keychain",
-      "author": "Aditya Jain",
-      "github": "AdityaJainDXB",
-      "status": "pending",
-      "description": "The keychain for the InnoBits program, made in Fusion for the club, Innovate @ DIAB.",
-      "type": "cad",
-      "url": "https://www.printables.com/model/1927660-innovate-keychain",
-      "stl": "assets/models/innovate-keychain.stl"
-    }
-  ],
   "vibes": [
     {
       "name": "orbit-club",
@@ -470,6 +457,19 @@
       "url": "https://github.com/seriouZly615/orbit-club",
       "demo": "https://seriouzly615.github.io/orbit-club/",
       "github": "seriouZly615"
+    }
+  ],
+  "fusering": [
+    {
+      "name": "innovate-keychain",
+      "title": "Innovate Keychain",
+      "author": "Aditya Jain",
+      "github": "AdityaJainDXB",
+      "status": "pending",
+      "description": "An Innovate @ DIAB keychain, designed in Fusion for the Fusering program.",
+      "type": "cad",
+      "url": "https://www.printables.com/model/1927660-innovate-keychain",
+      "stl": "assets/models/innovate-keychain.stl"
     }
   ]
 }
