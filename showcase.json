@@ -376,11 +376,11 @@
   "club": [
     {
       "name": "innovate-keychain",
-      "title": "Innovate Keychain",
+      "title": "InnoBit Keychain",
       "author": "Aditya Jain",
       "github": "AdityaJainDXB",
       "status": "pending",
-      "description": "A keychain that represents the club, Innovate at DIAB.",
+      "description": "The keychain for the InnoBits program, made in Fusion for the club, Innovate @ DIAB.",
       "type": "cad",
       "url": "https://www.printables.com/model/1927660-innovate-keychain",
       "stl": "assets/models/innovate-keychain.stl"
