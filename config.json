@@ -28,6 +28,13 @@
       "mode": "manual"
     },
     {
+      "id": "vibes",
+      "title": "Program Vibes",
+      "description": "Coding projects: websites and programs.",
+      "topic": "diab-hc-vibes",
+      "mode": "manual"
+    },
+    {
       "id": "club",
       "title": "Club projects",
       "description": "Things we made for the club that aren't part of a workshop.",

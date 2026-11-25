@@ -31,8 +31,8 @@
       "github": "Saigamer007pro",
       "description": "A star cookie cutter. Chosen because Sai is a STAR!",
       "type": "cad",
-      "stl": "assets/models/my-star-cookie-d2dfc28b.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/my-star-cookie-d2dfc28b.stl",
+      "stl": "assets/models/my-star-cookie-ef74e070.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/my-star-cookie-ef74e070.stl",
       "status": "approved",
       "coins": 8
     },
@@ -384,6 +384,18 @@
       "type": "cad",
       "url": "https://www.printables.com/model/1927660-innovate-keychain",
       "stl": "assets/models/innovate-keychain.stl"
+    }
+  ],
+  "vibes": [
+    {
+      "name": "orbit-club",
+      "title": "Orbit Club",
+      "author": "Zayed Ahmad Alhammadi",
+      "status": "pending",
+      "type": "website",
+      "description": "A responsive one-page field guide to the eight planets, with a custom orbit illustration, concise planet profiles, filters by planet type, a random space-fact button and a light/dark theme toggle.",
+      "url": "https://github.com/seriouZly615/orbit-club",
+      "demo": "https://seriouzly615.github.io/orbit-club/"
     }
   ]
 }

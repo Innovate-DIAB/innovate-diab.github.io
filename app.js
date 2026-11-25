@@ -73,7 +73,24 @@ function stlCard(p) {
         p.stl && h("a", { href: p.stl, download: "" }, /\.(step|stp)$/i.test(p.stl) ? "Download STEP" : "Download STL"))));
 }
 
+function webCard(p) {
+  return h("article", { class: "card" },
+    h("img", { class: "thumb placeholder", alt: "", src: config.club.logo || "" }),
+    h("div", { class: "card-body" },
+      h("h3", {}, h("a", { href: p.demo || p.url, target: "_blank", rel: "noopener" }, p.title)),
+      h("span", { class: "author" }, p.author),
+      h("p", {}, p.description),
+      h("div", { class: "meta" },
+        h("span", { class: "badge" }, TYPE_BADGE[p.type] || "Website"),
+        isApproved(p) ? h("span", { class: "badge bit" }, `+${coinsOf(p)} InnoBits`) : h("span", { class: "badge pend" }, "Pending"),
+        isApproved(p) ? h("span", { class: "badge ok" }, "Approved") : h("span", { class: "badge wip" }, "In progress")),
+      h("div", { class: "links" },
+        h("a", { href: p.url, target: "_blank", rel: "noopener" }, "Code"),
+        safeUrl(p.demo) && h("a", { href: p.demo, target: "_blank", rel: "noopener" }, "Live demo"))));
+}
+
 function card(p) {
+  if (p.title && p.url && !p.stl && !p.noModel && !p.full_name) return webCard(p);
   if (p.stl || p.noModel) return stlCard(p);
   const thumb = h("img", {
     class: "thumb", loading: "lazy", alt: "",
