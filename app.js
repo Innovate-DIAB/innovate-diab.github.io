@@ -66,7 +66,7 @@ function stlCard(p) {
       h("p", {}, p.description),
       h("div", { class: "meta" },
         h("span", { class: "badge" }, "3D print"),
-        isApproved(p) ? h("span", { class: "badge bit" }, "+1 InnoBit") : h("span", { class: "badge pend" }, "Pending"),
+        isApproved(p) ? h("span", { class: "badge bit" }, `+${coinsOf(p)} InnoBits`) : h("span", { class: "badge pend" }, "Pending"),
         isApproved(p) ? h("span", { class: "badge ok" }, "Approved") : h("span", { class: "badge wip" }, "In progress")),
       h("div", { class: "links" },
         h("a", { href: p.url, target: "_blank", rel: "noopener" }, p.stl ? "View on GitHub" : "View model"),
@@ -139,6 +139,8 @@ function meetEl() {
 
 // Only approved projects earn an InnoBit. Repo-based projects come from the approved list, so they count.
 const isApproved = (p) => (p.status || "approved") === "approved";
+// Each approved ship is worth the coins Hack Club paid for it (for example 8, 12 or 18). 1 InnoBit = 1 coin.
+const coinsOf = (p) => (Number.isFinite(p.coins) ? p.coins : 1);
 
 // InnoBits: every project someone submits earns them 1 InnoBit. Counted from everything shown in the gallery.
 function innoBits() {
@@ -151,8 +153,8 @@ function innoBits() {
     const key = (github || name).toLowerCase();
     const e = people.get(key) || { name, github, avatar: p.avatar || null, count: 0, pending: 0, projects: [] };
     if (github && !e.github) e.github = github;
-    if (isApproved(p)) e.count += 1; else e.pending += 1;
-    e.projects.push((p.title || pretty(p.name)) + (isApproved(p) ? "" : " (pending)"));
+    if (isApproved(p)) e.count += coinsOf(p); else e.pending += 1;
+    e.projects.push((p.title || pretty(p.name)) + (isApproved(p) ? ` (+${coinsOf(p)})` : " (pending)"));
     people.set(key, e);
   }
   const hidden = new Set((config.leaderboardExclude || []).map((x) => x.toLowerCase()));
@@ -168,7 +170,7 @@ function innoBitsEl() {
     h("div", { class: "section-head" },
       h("h2", { text: "InnoBits" }),
       h("span", { class: "mode", text: `${total} earned${pendingTotal ? `, ${pendingTotal} pending` : ""}` })),
-    h("p", { class: "desc", text: "Every approved project earns you 1 InnoBit. Projects still waiting for approval show as pending until they are approved." }),
+    h("p", { class: "desc", text: "InnoBits were created to make it easy to see who does how much work and who contributes most to the club. Each approved ship earns InnoBits equal to the coins Hack Club gives for it (1 InnoBit = 1 coin), so a ship worth 12 coins earns 12 InnoBits. Ships still waiting for approval show as pending." }),
     h("ol", { class: "bits" }, board.map((e, i) => {
       const who = [
         (e.github || e.avatar) && h("img", { src: e.avatar || `https://github.com/${e.github}.png?size=40`, alt: "", loading: "lazy" }),

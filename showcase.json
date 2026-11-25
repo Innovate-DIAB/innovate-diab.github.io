@@ -9,7 +9,8 @@
       "type": "cad",
       "stl": "assets/models/rocket-cookie-cutter-0296494c.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/rocket-cookie-cutter-0296494c.stl",
-      "status": "approved"
+      "status": "approved",
+      "coins": 12
     },
     {
       "name": "doge-cookie-cutter",
@@ -20,7 +21,8 @@
       "type": "cad",
       "stl": "assets/models/doge-cookie-cutter-03d41bd4.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/doge-cookie-cutter-03d41bd4.stl",
-      "status": "approved"
+      "status": "approved",
+      "coins": 12
     },
     {
       "name": "my-star-cookie",
@@ -31,7 +33,8 @@
       "type": "cad",
       "stl": "assets/models/my-star-cookie-d2dfc28b.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/my-star-cookie-d2dfc28b.stl",
-      "status": "pending"
+      "status": "approved",
+      "coins": 8
     },
     {
       "name": "car-chassis-cookie-cutter",
@@ -42,7 +45,8 @@
       "type": "cad",
       "stl": "assets/models/car-chasis-cookie-cutter-9ef2d904.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/car-chasis-cookie-cutter-9ef2d904.stl",
-      "status": "approved"
+      "status": "approved",
+      "coins": 12
     },
     {
       "name": "fc-barcelona-cookie-cutter",
@@ -53,7 +57,8 @@
       "type": "cad",
       "stl": "assets/models/fc-barcelona-cookie-cutter-09c415b6.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/fc-barcelona-cookie-cutter-09c415b6.stl",
-      "status": "approved"
+      "status": "approved",
+      "coins": 12
     },
     {
       "name": "my-tennis-ball",
@@ -64,18 +69,20 @@
       "type": "cad",
       "stl": "assets/models/my-tennis-ball-ff879175.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/my-tennis-ball-ff879175.stl",
-      "status": "pending"
+      "status": "approved",
+      "coins": 8
     },
     {
       "name": "f1-car",
       "title": "F1 Car",
       "author": "Saikrish Elangovan",
       "github": "Saigamer007pro",
-      "status": "pending",
+      "status": "approved",
       "description": "An F1 car built in Onshape, because he loves F1. PS: he supports Ferrari.",
       "type": "cad",
       "stl": "assets/models/f1-car-c066830b.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/f1-car-c066830b.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/f1-car-c066830b.stl",
+      "coins": 8
     },
     {
       "name": "ferrari-cookie-cutter",
@@ -86,92 +93,101 @@
       "description": "A Ferrari cookie cutter, made out of a love for Ferrari.",
       "type": "cad",
       "stl": "assets/models/ferrari-cookie-cutter-159c35a4.step",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/ferrari-cookie-cutter-159c35a4.step"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/ferrari-cookie-cutter-159c35a4.step",
+      "coins": 12
     },
     {
       "name": "candy-cane-cookie-cutter",
       "title": "Candy Cane Cookie Cutter",
       "author": "Inayat Mahajan",
-      "status": "pending",
+      "status": "approved",
       "description": "A candy cane cookie cutter, made because Christmas is a favourite festival and candy canes are part of it.",
       "type": "cad",
       "stl": "assets/models/candy-cane-cookie-cutter-1dc59f8a.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/candy-cane-cookie-cutter-1dc59f8a.stl",
-      "github": "inayat-m826i"
+      "github": "inayat-m826i",
+      "coins": 8
     },
     {
       "name": "snorlax-cookie-cliker",
       "title": "Snorlax Cookie Cutter",
       "author": "Reyansh Singh",
-      "status": "pending",
-      "description": "Made because Snorlax is a favourite Pok\u00e9mon, and Snorlax would love eating cookies. The edges are thicker than the guide asked for because of an extruder limit, which makes it more sturdy.",
+      "status": "approved",
+      "description": "Made because Snorlax is a favourite Pokémon, and Snorlax would love eating cookies. The edges are thicker than the guide asked for because of an extruder limit, which makes it more sturdy.",
       "type": "cad",
       "stl": "assets/models/snorlax-cookie-cliker-782fb546.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/snorlax-cookie-cliker-782fb546.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/snorlax-cookie-cliker-782fb546.stl",
+      "coins": 8
     },
     {
       "name": "b-2-bomber-cookie-cutter",
       "title": "B-2 Bomber Cookie Cutter",
       "author": "Weiyi Han",
       "github": "weiyihan2015-maker",
-      "status": "pending",
+      "status": "approved",
       "description": "A cookie cutter shaped like a B-2 stealth bomber, with a domed stick handle and a built-in support cone and web so the handle doesn't break when 3D printed.",
       "type": "cad",
       "stl": "assets/models/b-2-bomber-cookie-cutter-f4b0a57c.step",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/b-2-bomber-cookie-cutter-f4b0a57c.step"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/b-2-bomber-cookie-cutter-f4b0a57c.step",
+      "coins": 12
     },
     {
       "name": "airplane-cookie-cutter",
       "title": "Airplane Cookie Cutter",
       "author": "Weiyi Han",
       "github": "weiyihan2015-maker",
-      "status": "pending",
+      "status": "approved",
       "description": "A cookie cutter shaped like an airplane, with a domed stick handle and a built-in support cone and web so the handle doesn't break when 3D printed.",
       "type": "cad",
       "stl": "assets/models/airplane-cookie-cutter-21c396b4.step",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/airplane-cookie-cutter-21c396b4.step"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/airplane-cookie-cutter-21c396b4.step",
+      "coins": 18
     },
     {
       "name": "p2s-cookie-cutter",
       "title": "P2S Cookie Cutter",
       "author": "Reyansh Singh",
-      "status": "pending",
+      "status": "approved",
       "description": "Inspired by the Bambu Lab P2S, a dream 3D printer. Eating P2S-shaped cookies every day would be fun!",
       "type": "cad",
       "stl": "assets/models/p2s-cookie-cuter-c4361e9d.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/p2s-cookie-cuter-c4361e9d.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/p2s-cookie-cuter-c4361e9d.stl",
+      "coins": 8
     },
     {
       "name": "crown-cutter",
       "title": "Crown Cutter",
       "author": "Viraj Chadha",
-      "status": "pending",
+      "status": "approved",
       "description": "A crown cookie cutter for celebrating wins, to show that you are the king or queen.",
       "type": "cad",
       "stl": "assets/models/crown-cutter-618d2731.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/crown-cutter-618d2731.stl",
-      "github": "VirajSinghChadha"
+      "github": "VirajSinghChadha",
+      "coins": 8
     },
     {
       "name": "shoes-cookie-cutter",
       "title": "Shoes Cookie Cutter",
       "author": "Vivaan Daga",
-      "status": "pending",
+      "status": "approved",
       "description": "A shoe shaped cookie cutter, made out of a love for shoes, especially formal shoes.",
       "type": "cad",
       "stl": "assets/models/shoes-cookie-cutter-62efefad.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/shoes-cookie-cutter-62efefad.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/shoes-cookie-cutter-62efefad.stl",
+      "coins": 8
     },
     {
       "name": "batman-cookie-cutter",
       "title": "Batman Cookie Cutter",
       "author": "Inayat Mahajan",
       "github": "inayat-m826i",
-      "status": "pending",
+      "status": "approved",
       "description": "A Batman cookie cutter, because lots of people like Batman and his logo looks cool.",
       "type": "cad",
       "stl": "assets/models/batman-cookie-cutter-0e24a7f0.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/batman-cookie-cutter-0e24a7f0.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/batman-cookie-cutter-0e24a7f0.stl",
+      "coins": 8
     },
     {
       "name": "buddh-circuit-cookie-cutter",
@@ -189,55 +205,60 @@
       "title": "3D Brick Cookie Cutter",
       "author": "Ansh Mittal",
       "github": "AURAnsh",
-      "status": "pending",
+      "status": "approved",
       "description": "A CAD challenge: a 3D isometric brick image mapped onto a 2D plane, then extruded into a cookie cutter.",
       "type": "cad",
       "stl": "assets/models/3d-brick-cookie-cutter-842ad497.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/3d-brick-cookie-cutter-842ad497.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/3d-brick-cookie-cutter-842ad497.stl",
+      "coins": 8
     },
     {
       "name": "orange-slice-cookie-cutter",
       "title": "Orange Slice Cookie Cutter",
       "author": "Ansh Mittal",
       "github": "AURAnsh",
-      "status": "pending",
+      "status": "approved",
       "description": "A CAD challenge: an orange slice, a more complex shape that can't be made with simple lines and arcs.",
       "type": "cad",
       "stl": "assets/models/orange-slice-cookie-cutter-d2f6d602.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/orange-slice-cookie-cutter-d2f6d602.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/orange-slice-cookie-cutter-d2f6d602.stl",
+      "coins": 8
     },
     {
       "name": "sao-paulo-f1-track-cookie-cutter",
       "title": "Sao Paulo F1 Track Cookie Cutter",
       "author": "Agastya Johri",
       "github": "AgastyaJohriDXB",
-      "status": "pending",
+      "status": "approved",
       "description": "A cookie inspired by the map of the Sao Paulo F1 track, from a new interest in F1.",
       "type": "cad",
       "stl": "assets/models/s-o-paulo-f1-track-cookie-cutter-eb04870f.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/s-o-paulo-f1-track-cookie-cutter-eb04870f.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/s-o-paulo-f1-track-cookie-cutter-eb04870f.stl",
+      "coins": 8
     },
     {
       "name": "christmas-tree-cookie-cutter",
       "title": "Christmas Tree Cookie Cutter",
       "author": "Agastya Johri",
       "github": "AgastyaJohriDXB",
-      "status": "pending",
+      "status": "approved",
       "description": "Christmas is almost here, and what better way to celebrate than Christmas themed cookies!",
       "type": "cad",
       "stl": "assets/models/christmas-tree-cookie-cutter-9a8d056e.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/christmas-tree-cookie-cutter-9a8d056e.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/christmas-tree-cookie-cutter-9a8d056e.stl",
+      "coins": 8
     },
     {
       "name": "abu-dhabi-f1-track-cookie-cutter",
       "title": "Abu Dhabi F1 Racing Track",
       "author": "Arjun Chopra",
       "github": "Arjunisc00l67",
-      "status": "pending",
+      "status": "approved",
       "description": "The Yas Marina Circuit in Abu Dhabi used in F1, special because Abu Dhabi is close to home.",
       "type": "cad",
       "stl": "assets/models/abu-dhabi-f1-racing-track-d692e67a.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/abu-dhabi-f1-racing-track-d692e67a.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/abu-dhabi-f1-racing-track-d692e67a.stl",
+      "coins": 8
     },
     {
       "name": "monaco-f1-track-cookie-cutter",
@@ -255,62 +276,68 @@
       "title": "Flower Cookie Cutter",
       "author": "Inayat Mahajan",
       "github": "inayat-m826i",
-      "status": "pending",
+      "status": "approved",
       "description": "A flower cookie cutter, made because flowers would look nice as cookies.",
       "type": "cad",
       "stl": "assets/models/flower-cookie-cutter-a47472ae.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/flower-cookie-cutter-a47472ae.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/flower-cookie-cutter-a47472ae.stl",
+      "coins": 8
     },
     {
       "name": "bell-cookie-clicker",
       "title": "Bell Cookie Cutter",
       "author": "Reyansh Singh",
-      "status": "pending",
+      "status": "approved",
       "description": "Made because belts are a fun type of cookie to make. It wasn't too hard, and it was nice.",
       "type": "cad",
       "stl": "assets/models/bell-cookie-clicker-af47c408.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/bell-cookie-clicker-af47c408.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/bell-cookie-clicker-af47c408.stl",
+      "coins": 8
     },
     {
       "name": "malaysia-race-track-cookie-cutter",
       "title": "Malaysia International Race Track Cookie Cutter",
       "author": "Vivaan Daga",
-      "status": "pending",
+      "status": "approved",
       "description": "A cookie cutter in the shape of the Malaysian F1 race track, an iconic track and the first F1 race they watched.",
       "type": "cad",
       "stl": "assets/models/malaysia-international-race-track-cookie-cutter-51398aca.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/malaysia-international-race-track-cookie-cutter-51398aca.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/malaysia-international-race-track-cookie-cutter-51398aca.stl",
+      "coins": 8
     },
     {
       "name": "the-duck",
       "title": "The Duck",
       "author": "Zayed Ahmad Alhammadi",
-      "status": "pending",
+      "status": "approved",
       "description": "A duck. Ducks are cool and funny, and no one can diss a duck.",
       "type": "cad",
       "stl": "assets/models/the-duck-1edb30c6.step",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/the-duck-1edb30c6.step"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/the-duck-1edb30c6.step",
+      "coins": 8
     },
     {
       "name": "luigis-mansion-ghost",
       "title": "The Ghost from Luigi's Mansion",
       "author": "Zayed Ahmad Alhammadi",
-      "status": "pending",
+      "status": "approved",
       "description": "A ghost from Luigi's Mansion, made just because it was a fun picture to model.",
       "type": "cad",
       "stl": "assets/models/the-ghost-from-luigi-s-mansion-d7815b4a.step",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/the-ghost-from-luigi-s-mansion-d7815b4a.step"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/the-ghost-from-luigi-s-mansion-d7815b4a.step",
+      "coins": 8
     },
     {
       "name": "luffys-straw-hat-cookie-cutter",
       "title": "Luffy's Straw Hat Cookie Cutter",
       "author": "Salvador Lopes",
       "github": "SalFluX99",
-      "status": "pending",
+      "status": "approved",
       "description": "A cookie cutter of Luffy's straw hat. One Piece is a favourite show, and the hat makes a unique cutter.",
       "type": "cad",
       "stl": "assets/models/luffy-s-straw-hat-cookie-cutter-43cb823f.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/luffy-s-straw-hat-cookie-cutter-43cb823f.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/luffy-s-straw-hat-cookie-cutter-43cb823f.stl",
+      "coins": 8
     },
     {
       "name": "pikachu-cookie-cutter",
@@ -322,6 +349,28 @@
       "type": "cad",
       "stl": "assets/models/pikachu-cookie-cutter-17490710.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/pikachu-cookie-cutter-17490710.stl"
+    },
+    {
+      "name": "video-game-cookie-cutter",
+      "title": "Video Game Cookie Cutter",
+      "author": "Alaap Kundu",
+      "status": "approved",
+      "description": "A cookie cutter shaped like a video game controller, made by someone who enjoys playing video games.",
+      "type": "cad",
+      "stl": "assets/models/video-game-cookie-cutter-6b5fb692.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/video-game-cookie-cutter-6b5fb692.stl",
+      "coins": 8
+    },
+    {
+      "name": "christmas-present",
+      "title": "Christmas Present",
+      "author": "Zayed Ahmad Alhammadi",
+      "status": "approved",
+      "description": "A present-shaped cookie cutter made with Christmas coming up.",
+      "type": "cad",
+      "stl": "assets/models/christmas-present-37463f38.step",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/christmas-present-37463f38.step",
+      "coins": 8
     }
   ],
   "club": [
