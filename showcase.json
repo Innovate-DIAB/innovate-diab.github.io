@@ -194,11 +194,12 @@
       "title": "Buddh International Circuit Cookie Cutter",
       "author": "Arjun Chopra",
       "github": "Arjunisc00l67",
-      "status": "pending",
+      "status": "approved",
       "description": "A racing track version of the Buddh International Circuit, an F1 circuit in India, made out of a love for F1 and for home.",
       "type": "cad",
       "stl": "assets/models/buddh-international-circuit-racing-track-24b4b49f.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/buddh-international-circuit-racing-track-24b4b49f.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/buddh-international-circuit-racing-track-24b4b49f.stl",
+      "coins": 12
     },
     {
       "name": "3d-brick-cookie-cutter",
@@ -347,11 +348,12 @@
       "title": "Pikachu Cookie Cutter",
       "author": "Salvador Lopes",
       "github": "SalFluX99",
-      "status": "pending",
+      "status": "approved",
       "description": "A cookie cutter of Pikachu's face, the iconic Pokemon. Quite unique, and a fun project to make.",
       "type": "cad",
       "stl": "assets/models/pikachu-cookie-cutter-17490710.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/pikachu-cookie-cutter-17490710.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/pikachu-cookie-cutter-17490710.stl",
+      "coins": 12
     },
     {
       "name": "video-game-cookie-cutter",
@@ -381,11 +383,12 @@
       "title": "Bottle Cookie Cutter",
       "author": "Aditya Jain",
       "github": "AdityaJainDXB",
-      "status": "pending",
+      "status": "approved",
       "description": "A bottle-shaped cookie cutter inspired by the Caribbean and a map in a bottle.",
       "type": "cad",
       "stl": "assets/models/bottle-cookie-cutter-9bff2bad.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/bottle-cookie-cutter-9bff2bad.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/bottle-cookie-cutter-9bff2bad.stl",
+      "coins": 12
     },
     {
       "name": "mushroom-cookie-cutter",
@@ -429,6 +432,18 @@
       "type": "cad",
       "stl": "assets/models/lightining-bolt-cookie-cutter-aa64cdd9.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/lightining-bolt-cookie-cutter-aa64cdd9.stl"
+    },
+    {
+      "name": "orange-slice-cookie-cutter-2",
+      "title": "Orange Slice Cookie Cutter (second version)",
+      "author": "Ansh Mittal",
+      "github": "AURAnsh",
+      "status": "approved",
+      "coins": 12,
+      "description": "A second orange slice cookie cutter ship.",
+      "type": "cad",
+      "stl": "assets/models/orange-slice-cookie-cutter-a0cabf20.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/orange-slice-cookie-cutter-a0cabf20.stl"
     }
   ],
   "club": [
