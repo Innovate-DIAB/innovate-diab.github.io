@@ -159,12 +159,8 @@ function meetEl() {
 
 // Only approved projects earn an InnoBit. Repo-based projects come from the approved list, so they count.
 const isApproved = (p) => (p.status || "approved") === "approved";
-// InnoBits for an approved ship come from the coins Hack Club paid for it. Boundary values take the higher tier:
-// 5-7 coins = 1, 8-11 = 2, 12-17 = 3, 18-24 = 4, 25+ = 5. Entries with no coin value count as 1.
-const bitsOf = (p) => {
-  if (!Number.isFinite(p.coins)) return 1;
-  return [5, 8, 12, 18, 25].filter((min) => p.coins >= min).length;
-};
+// InnoBits earned by an approved ship. Entries with no coin value count as 1.
+const bitsOf = (p) => (Number.isFinite(p.coins) ? Math.floor(p.coins / 2) : 1);
 
 // InnoBits: every project someone submits earns them 1 InnoBit. Counted from everything shown in the gallery.
 function innoBits() {
@@ -194,7 +190,7 @@ function innoBitsEl() {
     h("div", { class: "section-head" },
       h("h2", { text: "InnoBits" }),
       h("span", { class: "mode", text: `${total} earned${pendingTotal ? `, ${pendingTotal} pending` : ""}` })),
-    h("p", { class: "desc", text: "InnoBits were created to make it easy to see who does how much work and who contributes most to the club. Each approved ship earns InnoBits based on the coins Hack Club gives for it: 5-7 coins = 1, 8-11 = 2, 12-17 = 3, 18-24 = 4, 25 or more = 5. Ships still waiting for approval show as pending." }),
+    h("p", { class: "desc", text: "InnoBits were created to make it easy to see who does how much work and who contributes most to the club. Every approved ship earns InnoBits, and bigger ships earn more. Ships still waiting for approval show as pending." }),
     h("ol", { class: "bits" }, board.map((e, i) => {
       const who = [
         (e.github || e.avatar) && h("img", { src: e.avatar || `https://github.com/${e.github}.png?size=40`, alt: "", loading: "lazy" }),
