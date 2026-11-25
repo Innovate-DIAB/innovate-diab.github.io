@@ -9,24 +9,23 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
+# Let a running deploy finish; a newer run waits its turn instead of cancelling it.
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: read
+      pages: read
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
-          node-version: 20
+          node-version: 22
       - name: Build data.json
         run: node scripts/build-data.mjs
         env:
@@ -36,9 +35,35 @@ jobs:
           mkdir dist
           cp index.html style.css app.js viewer.js config.json data.json showcase.json dist/
           cp -r assets dist/assets
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # GitHub can take a few seconds to list a freshly uploaded artifact.
+      # Without this wait, deploy-pages fails with "Found 0 artifact(s)".
+      - name: Wait for the artifact to be listed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 30); do
+            n=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/artifacts?name=github-pages" -q .total_count || echo 0)
+            if [ "$n" -ge 1 ]; then echo "Artifact is listed."; exit 0; fi
+            echo "Not listed yet (try $i)."
+            sleep 5
+          done
+          echo "Artifact never appeared." >&2
+          exit 1
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
