@@ -374,6 +374,17 @@
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/christmas-present-37463f38.step",
       "coins": 8,
       "github": "seriouZly615"
+    },
+    {
+      "name": "bottle-cookie-cutter",
+      "title": "Bottle Cookie Cutter",
+      "author": "Aditya Jain",
+      "github": "AdityaJainDXB",
+      "status": "pending",
+      "description": "A bottle-shaped cookie cutter inspired by the Caribbean and a map in a bottle.",
+      "type": "cad",
+      "stl": "assets/models/bottle-cookie-cutter-9bff2bad.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/bottle-cookie-cutter-9bff2bad.stl"
     }
   ],
   "club": [
