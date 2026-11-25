@@ -385,6 +385,39 @@
       "type": "cad",
       "stl": "assets/models/bottle-cookie-cutter-9bff2bad.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/bottle-cookie-cutter-9bff2bad.stl"
+    },
+    {
+      "name": "mushroom-cookie-cutter",
+      "title": "Mushroom Cookie Cutter",
+      "author": "Aashvi Jain",
+      "github": "aashviJ10",
+      "status": "pending",
+      "description": "A mushroom-shaped cookie cutter made in Onshape.",
+      "type": "cad",
+      "stl": "assets/models/mushroom-cookie-cutter-a4d35a43.step",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/mushroom-cookie-cutter-a4d35a43.step"
+    },
+    {
+      "name": "cowboy-hat-cookie-cutter",
+      "title": "Cowboy Hat Cookie Cutter",
+      "author": "Aashvi Jain",
+      "github": "aashviJ10",
+      "status": "pending",
+      "description": "A cowboy hat cookie cutter made in Onshape.",
+      "type": "cad",
+      "stl": "assets/models/cowboy-hat-cookie-cutter-0093f707.step",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/cowboy-hat-cookie-cutter-0093f707.step"
+    },
+    {
+      "name": "ice-cream-cookie-cutter",
+      "title": "Ice Cream Cookie Cutter",
+      "author": "Aashvi Jain",
+      "github": "aashviJ10",
+      "status": "pending",
+      "description": "An ice cream cookie cutter made in Onshape.",
+      "type": "cad",
+      "stl": "assets/models/ice-cream-cookie-cutter-f949d6b4.step",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/ice-cream-cookie-cutter-f949d6b4.step"
     }
   ],
   "club": [
