@@ -265,11 +265,12 @@
       "title": "Monaco F1 Racing Track",
       "author": "Arjun Chopra",
       "github": "Arjunisc00l67",
-      "status": "pending",
+      "status": "approved",
       "description": "A layout of the Monaco F1 track, showing how F1 cars race on it.",
       "type": "cad",
       "stl": "assets/models/monaco-f1-racing-track-6e0b047f.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/monaco-f1-racing-track-6e0b047f.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/monaco-f1-racing-track-6e0b047f.stl",
+      "coins": 12
     },
     {
       "name": "flower-cookie-cutter",
@@ -418,6 +419,16 @@
       "type": "cad",
       "stl": "assets/models/ice-cream-cookie-cutter-f949d6b4.step",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/ice-cream-cookie-cutter-f949d6b4.step"
+    },
+    {
+      "name": "lightning-bolt-cookie-cutter",
+      "title": "Lightning Bolt Cookie Cutter",
+      "author": "Alaap Kundu",
+      "status": "pending",
+      "description": "A lightning bolt cookie cutter, for cookies shaped like lightning bolts.",
+      "type": "cad",
+      "stl": "assets/models/lightining-bolt-cookie-cutter-aa64cdd9.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/lightining-bolt-cookie-cutter-aa64cdd9.stl"
     }
   ],
   "club": [
