@@ -483,6 +483,17 @@
       "stl": "assets/models/apple-cookie-cutter-f872be28.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/apple-cookie-cutter-f872be28.stl",
       "coins": 8
+    },
+    {
+      "name": "dinosaur-cookie-cutter",
+      "title": "Dinosaur Cookie Cutter",
+      "author": "Aashray Mittal",
+      "github": "TheChessLord1",
+      "status": "pending",
+      "description": "A brachiosaurus cookie cutter, made out of an interest in dinosaurs.",
+      "type": "cad",
+      "stl": "assets/models/dinosaur-cookie-cutter-26360c9f.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/dinosaur-cookie-cutter-26360c9f.stl"
     }
   ],
   "vibes": [
@@ -555,6 +566,17 @@
       "type": "cad",
       "noModel": true,
       "url": "https://cad.onshape.com/documents/9b10dc51f79d8c02aa4d9971/w/b2601014925e20abc79132e8/e/cee7d84eabaf419703b3fa49"
+    },
+    {
+      "name": "optimus-prime-keychain",
+      "title": "Optimus Prime Full-Body Keychain",
+      "author": "Weiyi Han",
+      "github": "weiyihan2015-maker",
+      "status": "pending",
+      "description": "A flat-backed keychain of Optimus Prime in robot mode, with a built-in ring hole, designed in Onshape.",
+      "type": "cad",
+      "noModel": true,
+      "url": "https://cad.onshape.com/documents/97cccbfff161c96cfb63fde1/w/864a5247bfbaa20528267faf/e/39be86ea50ad2c8835f586f0"
     }
   ],
   "shadergator": [
@@ -590,6 +612,19 @@
       "description": "A shader mixing nature and roses.",
       "url": "https://github.com/Saigamer007pro/Neon-Bloom",
       "demo": "https://shadergator.hackclub.com/ships/59"
+    }
+  ],
+  "folktale": [
+    {
+      "name": "numberdungeon",
+      "title": "NumberDungeon",
+      "author": "Saikrish Elangovan",
+      "github": "Saigamer007pro",
+      "status": "pending",
+      "type": "game",
+      "description": "A castle game where you have 7 guesses to pick the right number from 1 to 100 and be freed.",
+      "url": "https://github.com/AURAnsh/NumberDungeon",
+      "demo": "https://pyterm.hackclub.com/AURAnsh/NumberDungeon"
     }
   ]
 }

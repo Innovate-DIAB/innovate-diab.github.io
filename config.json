@@ -47,6 +47,13 @@
       "description": "Shaders built in the ShaderGator workshop.",
       "topic": "diab-hc-shadergator",
       "mode": "manual"
+    },
+    {
+      "id": "folktale",
+      "title": "Folktale",
+      "description": "Games built in the Folktale workshop.",
+      "topic": "diab-hc-folktale",
+      "mode": "manual"
     }
   ]
 }

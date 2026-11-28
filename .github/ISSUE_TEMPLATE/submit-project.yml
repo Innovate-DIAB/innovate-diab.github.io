@@ -19,6 +19,7 @@ body:
         - Vibes
         - Fusering
         - ShaderGator
+        - Folktale
     validations:
       required: true
   - type: textarea
