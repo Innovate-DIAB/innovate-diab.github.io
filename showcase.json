@@ -577,6 +577,17 @@
       "type": "cad",
       "noModel": true,
       "url": "https://cad.onshape.com/documents/97cccbfff161c96cfb63fde1/w/864a5247bfbaa20528267faf/e/39be86ea50ad2c8835f586f0"
+    },
+    {
+      "name": "gaming-controller-keychain",
+      "title": "Gaming Controller Keychain",
+      "author": "Salvador Lopes",
+      "github": "SalFluX99",
+      "status": "pending",
+      "description": "A keychain shaped like a gaming controller.",
+      "type": "cad",
+      "noModel": true,
+      "url": "https://www.printables.com/model/1932288-gaming-controller-keychain"
     }
   ],
   "shadergator": [
@@ -625,6 +636,17 @@
       "description": "A castle game where you have 7 guesses to pick the right number from 1 to 100 and be freed.",
       "url": "https://github.com/AURAnsh/NumberDungeon",
       "demo": "https://pyterm.hackclub.com/AURAnsh/NumberDungeon"
+    },
+    {
+      "name": "print-farm",
+      "title": "Print Farm",
+      "author": "Aditya Jain",
+      "github": "AdityaJainDXB",
+      "status": "pending",
+      "type": "game",
+      "description": "Escape the Print Farm: a Python text adventure with puzzles, 12 turns before the power cuts out and three endings.",
+      "url": "https://github.com/AdityaJainDXB/Print-Farm-Folktale",
+      "demo": "https://pyterm.hackclub.com/AdityaJainDXB/Print-Farm-Folktale"
     }
   ]
 }
