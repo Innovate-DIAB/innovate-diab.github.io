@@ -16,6 +16,9 @@ body:
       label: Which workshop is it for?
       options:
         - BakeBuild
+        - Vibes
+        - Fusering
+        - ShaderGator
     validations:
       required: true
   - type: textarea
