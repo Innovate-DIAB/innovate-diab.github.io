@@ -23,7 +23,7 @@ Hack Club also runs programs where you ship a project and get something back for
 - Follow us on [Instagram](https://www.instagram.com/innovateat_diab/) too.
 - Watch us on [YouTube](https://www.youtube.com/@InnovateDIAB).
 - DIAB students: sign up with the [DIAB InnovateXhackclub form](https://forms.cloud.microsoft/r/DDFd4ajd7E).
-- Other schools: sign up on the [external sign-up page](https://innovatediab.dino.icu/signup.html).
+- Other schools: sign up on the [external sign-up form](https://forms.cloud.microsoft/r/8mtcDznam5).
 - Make a free [GitHub account](https://github.com/signup) if you don't have one (you need to be 13 or older).
 - Tell a club leader your username and we'll add you to the Innovate-DIAB organization.
 

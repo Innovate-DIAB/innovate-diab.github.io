@@ -9,7 +9,7 @@
     "tiktokUrl": "https://www.tiktok.com/@innovatediab",
     "instagramUrl": "https://www.instagram.com/innovateat_diab/",
     "youtubeUrl": "https://www.youtube.com/@InnovateDIAB",
-    "signupExternalUrl": "https://innovatediab.dino.icu/signup.html",
+    "signupExternalUrl": "https://forms.cloud.microsoft/r/8mtcDznam5",
     "signupUrl": "https://forms.cloud.microsoft/r/DDFd4ajd7E",
     "logo": "assets/logo-full.png"
   },
@@ -39,6 +39,13 @@
       "title": "Fusering",
       "description": "Keyrings designed in CAD for the Fusering workshop.",
       "topic": "diab-hc-fusering",
+      "mode": "manual"
+    },
+    {
+      "id": "shadergator",
+      "title": "ShaderGator",
+      "description": "Shaders built in the ShaderGator workshop.",
+      "topic": "diab-hc-shadergator",
       "mode": "manual"
     }
   ]

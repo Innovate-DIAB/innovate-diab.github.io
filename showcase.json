@@ -353,7 +353,7 @@
       "type": "cad",
       "stl": "assets/models/pikachu-cookie-cutter-17490710.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/pikachu-cookie-cutter-17490710.stl",
-      "coins": 12
+      "coins": 8
     },
     {
       "name": "video-game-cookie-cutter",
@@ -364,7 +364,7 @@
       "type": "cad",
       "stl": "assets/models/video-game-cookie-cutter-6b5fb692.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/video-game-cookie-cutter-6b5fb692.stl",
-      "coins": 8
+      "coins": 12
     },
     {
       "name": "christmas-present",
@@ -388,62 +388,99 @@
       "type": "cad",
       "stl": "assets/models/bottle-cookie-cutter-9bff2bad.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/bottle-cookie-cutter-9bff2bad.stl",
-      "coins": 12
+      "coins": 8
     },
     {
       "name": "mushroom-cookie-cutter",
       "title": "Mushroom Cookie Cutter",
       "author": "Aashvi Jain",
       "github": "aashviJ10",
-      "status": "pending",
+      "status": "approved",
       "description": "A mushroom-shaped cookie cutter made in Onshape.",
       "type": "cad",
       "stl": "assets/models/mushroom-cookie-cutter-a4d35a43.step",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/mushroom-cookie-cutter-a4d35a43.step"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/mushroom-cookie-cutter-a4d35a43.step",
+      "coins": 8
     },
     {
       "name": "cowboy-hat-cookie-cutter",
       "title": "Cowboy Hat Cookie Cutter",
       "author": "Aashvi Jain",
       "github": "aashviJ10",
-      "status": "pending",
+      "status": "approved",
       "description": "A cowboy hat cookie cutter made in Onshape.",
       "type": "cad",
       "stl": "assets/models/cowboy-hat-cookie-cutter-0093f707.step",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/cowboy-hat-cookie-cutter-0093f707.step"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/cowboy-hat-cookie-cutter-0093f707.step",
+      "coins": 8
     },
     {
       "name": "ice-cream-cookie-cutter",
       "title": "Ice Cream Cookie Cutter",
       "author": "Aashvi Jain",
       "github": "aashviJ10",
-      "status": "pending",
+      "status": "approved",
       "description": "An ice cream cookie cutter made in Onshape.",
       "type": "cad",
       "stl": "assets/models/ice-cream-cookie-cutter-f949d6b4.step",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/ice-cream-cookie-cutter-f949d6b4.step"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/ice-cream-cookie-cutter-f949d6b4.step",
+      "coins": 8
     },
     {
       "name": "lightning-bolt-cookie-cutter",
       "title": "Lightning Bolt Cookie Cutter",
       "author": "Alaap Kundu",
-      "status": "pending",
+      "status": "approved",
       "description": "A lightning bolt cookie cutter, for cookies shaped like lightning bolts.",
       "type": "cad",
       "stl": "assets/models/lightining-bolt-cookie-cutter-aa64cdd9.stl",
-      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/lightining-bolt-cookie-cutter-aa64cdd9.stl"
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/lightining-bolt-cookie-cutter-aa64cdd9.stl",
+      "coins": 12
     },
     {
-      "name": "orange-slice-cookie-cutter-2",
-      "title": "Orange Slice Cookie Cutter (second version)",
+      "name": "pac-man-cookie-cutter",
+      "title": "Pac Man Cookie Cutter",
       "author": "Ansh Mittal",
       "github": "AURAnsh",
       "status": "approved",
-      "coins": 12,
-      "description": "A second orange slice cookie cutter ship.",
+      "coins": 8,
+      "description": "A Pac-Man cookie cutter, from a big video game fan who wanted to try unique shapes.",
       "type": "cad",
       "stl": "assets/models/orange-slice-cookie-cutter-a0cabf20.stl",
       "url": "https://github.com/hackclub/bakebuild/blob/main/projects/orange-slice-cookie-cutter-a0cabf20.stl"
+    },
+    {
+      "name": "flag-cookie-cutter",
+      "title": "Flag Cookie Cutter",
+      "author": "Alaap Kundu",
+      "status": "approved",
+      "description": "A triangle flag cookie cutter, a sign of accomplishment and victory.",
+      "type": "cad",
+      "stl": "assets/models/flag-cookie-cutter-d099cc4b.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/flag-cookie-cutter-d099cc4b.stl",
+      "coins": 12
+    },
+    {
+      "name": "chess-king-cookie-cutter",
+      "title": "Chess King Cookie Cutter",
+      "author": "Aashray Mittal",
+      "status": "approved",
+      "description": "A chess king cookie cutter, after a favourite piece from years of playing chess.",
+      "type": "cad",
+      "stl": "assets/models/chess-king-cookie-cutter-9379928c.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/chess-king-cookie-cutter-9379928c.stl",
+      "coins": 8
+    },
+    {
+      "name": "apple-cookie-cutter",
+      "title": "Apple Cookie Cutter",
+      "author": "Aashray Mittal",
+      "status": "approved",
+      "description": "An apple cookie cutter, inspired by the company Apple and an apple eaten while designing.",
+      "type": "cad",
+      "stl": "assets/models/apple-cookie-cutter-f872be28.stl",
+      "url": "https://github.com/hackclub/bakebuild/blob/main/projects/apple-cookie-cutter-f872be28.stl",
+      "coins": 8
     }
   ],
   "vibes": [
@@ -457,6 +494,30 @@
       "url": "https://github.com/seriouZly615/orbit-club",
       "demo": "https://seriouzly615.github.io/orbit-club/",
       "github": "seriouZly615"
+    },
+    {
+      "name": "aero-nova",
+      "title": "Aero Nova",
+      "author": "Aditya Jain",
+      "github": "AdityaJainDXB",
+      "status": "approved",
+      "coins": 17,
+      "type": "game",
+      "description": "A space game where you control aircraft and spaceships with air traffic control style controls and set up missions.",
+      "url": "https://github.com/AdityaJainDXB/aero-nova",
+      "demo": "https://adityajaindxb.github.io/aero-nova/"
+    },
+    {
+      "name": "gamedevdotcom",
+      "title": "GameDevDotCom",
+      "author": "Ansh Mittal",
+      "github": "AURAnsh",
+      "status": "approved",
+      "coins": 16,
+      "type": "website",
+      "description": "A multi-page website promoting game development, with a call to action at the end.",
+      "url": "https://github.com/AURAnsh/GameDevDotCom",
+      "demo": "https://auransh.github.io/GameDevDotCom/"
     }
   ],
   "fusering": [
@@ -470,6 +531,63 @@
       "type": "cad",
       "url": "https://www.printables.com/model/1927660-innovate-keychain",
       "stl": "assets/models/innovate-keychain.stl"
+    },
+    {
+      "name": "ansh-fusering",
+      "title": "<ANSH/> Fusering",
+      "author": "Ansh Mittal",
+      "github": "AURAnsh",
+      "status": "pending",
+      "description": "A fusering with a name between HTML-style brackets, reflecting on hobbies.",
+      "type": "cad",
+      "noModel": true,
+      "url": "https://www.printables.com/model/1930347-ansh-fusering"
+    },
+    {
+      "name": "key-keychain-fusering",
+      "title": "Key Shaped Keychain Fusering",
+      "author": "Aashvi Jain",
+      "github": "aashviJ10",
+      "status": "pending",
+      "description": "A key-shaped keychain made for Fusering.",
+      "type": "cad",
+      "noModel": true,
+      "url": "https://cad.onshape.com/documents/9b10dc51f79d8c02aa4d9971/w/b2601014925e20abc79132e8/e/cee7d84eabaf419703b3fa49"
+    }
+  ],
+  "shadergator": [
+    {
+      "name": "wave-simulation",
+      "title": "Wave Simulation",
+      "author": "Ansh Mittal",
+      "github": "AURAnsh",
+      "status": "pending",
+      "type": "code",
+      "description": "A shader of a bouncy ball travelling across the screen.",
+      "url": "https://github.com/cobalt-makes-games/Bouncy-Ball",
+      "demo": "https://shadergator.hackclub.com/ships/65"
+    },
+    {
+      "name": "jelly-gator",
+      "title": "Jelly Gator",
+      "author": "Aditya Jain",
+      "github": "AdityaJainDXB",
+      "status": "pending",
+      "type": "code",
+      "description": "An ocean aurora shader in teal and blue.",
+      "url": "https://github.com/AdityaJainDXB/Jelly-Gator",
+      "demo": "https://shadergator.hackclub.com/ships/58"
+    },
+    {
+      "name": "nature",
+      "title": "Nature",
+      "author": "Saikrish Elangovan",
+      "github": "Saigamer007pro",
+      "status": "pending",
+      "type": "code",
+      "description": "A shader mixing nature and roses.",
+      "url": "https://github.com/Saigamer007pro/Neon-Bloom",
+      "demo": "https://shadergator.hackclub.com/ships/59"
     }
   ]
 }
